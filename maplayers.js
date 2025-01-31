@@ -56,12 +56,12 @@ var overlaysTree = {
 
 
               // MELLANÄNGARNA
-                { label: 'Mellanängarna', selectAllCheckbox: true, children: [
+                { label: 'Mellanängarna', selectAllCheckbox: true, collapsed: true, children: [
 
                   // Västra mellanängarna
-                  { label: "Västra", selectAllCheckbox: true, children: [
+                  { label: "Västra", selectAllCheckbox: true, collapsed: true, children: [
                     // Dike A 
-                    { label: "A", selectAllCheckbox: true, children: [
+                    { label: "A", selectAllCheckbox: true, collapsed: true, children: [
                       { label: "A1", layer: groups.mva1 },
                       { label: "A2", layer: groups.mva2 },
                       { label: "A3", layer: groups.mva3 },
@@ -70,7 +70,7 @@ var overlaysTree = {
                       { label: "A6", layer: groups.mva6 },
                     ]},
                     // Dike B 
-                    { label: "B", selectAllCheckbox: true, children: [
+                    { label: "B", selectAllCheckbox: true, collapsed: true, children: [
                       { label: "B1", layer: groups.mvb1 },
                       { label: "B2", layer: groups.mvb2 },
                       { label: "B3", layer: groups.mvb3 },
@@ -78,7 +78,7 @@ var overlaysTree = {
                       { label: "B5", layer: groups.mvb5 },
                     ]},
                     // Dike C 
-                    { label: "C", selectAllCheckbox: true, children: [
+                    { label: "C", selectAllCheckbox: true, collapsed: true, children: [
                       { label: "C1", layer: groups.mvc1 },
                       { label: "C2", layer: groups.mvc2 },
                       { label: "c3", layer: groups.mvc3 },
