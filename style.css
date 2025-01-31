@@ -2,17 +2,28 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#badger {
+  height: 5rem;
+  width: 7rem;
+}
+
+h3 {
+  color: white;
+  font-weight: bolder;
+}
+
 html, body, #map {
     height: 100%;
     width: 100vw;
     z-index: 0;
 }
-.hollyrosa {
+.rectangle {
     bottom: 10px;
     left: 10px;
-    background: white;
+    background: #003660;
     border-radius: 5px;
-    border: 1px solid;
+    border: 0px solid;
     z-index: 1;
     padding: 10px;
     position: absolute;
