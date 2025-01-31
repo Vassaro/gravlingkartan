@@ -7,7 +7,7 @@
         "title": "A1",
         "color": "blue",
         "group": "mva1",
-        "desc": "Längd: 14.2m"
+        "desc": "DIKE <br>Längd: 14.2m"
       },
       "geometry": {
         "coordinates": [
@@ -30,7 +30,7 @@
         "title": "A2",
         "color": "blue",
         "group": "mva2",
-        "desc": "Längd: 15.9m"
+        "desc": "DIKE <br>Längd: 15.9m"
       },
       "geometry": {
         "coordinates": [
@@ -80,7 +80,7 @@
         "title": "A4",
         "color": "blue",
         "group": "mva4",
-        "desc": "Längd: 56.3m"
+        "desc": "DIKE <br>Längd: 56.3m"
       },
       "geometry": {
         "coordinates": [
@@ -112,10 +112,10 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "a5: VÄGTRUMMA",
+        "title": "a5",
         "color": "#0091ff",
         "group": "mva5",
-        "desc": "Längd: 23.3m"
+        "desc": "VÄGTRUMMA <br>Längd: 23.3m"
       },
       "geometry": {
         "coordinates": [
@@ -138,7 +138,7 @@
         "title": "A6",
         "color": "blue",
         "group": "mva6",
-        "desc": "Längd: 33.6m"
+        "desc": "DIKE <br>Längd: 33.6m"
       },
       "geometry": {
         "coordinates": [
@@ -181,7 +181,7 @@
         "title": "B1",
         "color": "blue",
         "group": "mvb1",
-        "desc": "Längd: 7.6m"
+        "desc": "DIKE <br>Längd: 7.6m"
       },
       "geometry": {
         "coordinates": [
@@ -204,7 +204,7 @@
         "title": "B2",
         "color": "blue",
         "group": "mvb2",
-        "desc": "Längd: 51.0m"
+        "desc": "DIKE <br>Längd: 59.0m"
       },
       "geometry": {
         "coordinates": [
@@ -213,8 +213,8 @@
             60.25872262098619
           ],
           [
-            18.694394991916113,
-            60.25912457887134
+            18.694319363277913,
+            60.25918623012461
           ]
         ],
         "type": "LineString"
@@ -226,30 +226,8 @@
       "properties": {
         "title": "B3",
         "color": "blue",
-        "group": "mvb3"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            18.694394991916113,
-            60.25912457887134
-          ],
-          [
-            18.694319363277913,
-            60.25918623012461
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 8
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "B4",
-        "color": "blue",
-        "group": "mvb4",
-        "desc": "Längd: 28.0m"
+        "group": "mvb3",
+        "desc": "DIKE <br>Längd: 28.0m"
       },
       "geometry": {
         "coordinates": [
@@ -272,15 +250,15 @@
         ],
         "type": "LineString"
       },
-      "id": 9
+      "id": 8
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "B5",
+        "title": "B4",
         "color": "blue",
-        "group": "mvb5",
-        "desc": "Längd: 99.3m"
+        "group": "mvb4",
+        "desc": "DIKE <br>Längd: 99.3m"
       },
       "geometry": {
         "coordinates": [
@@ -323,7 +301,7 @@
         ],
         "type": "LineString"
       },
-      "id": 10
+      "id": 9
     },
     {
       "type": "Feature",
@@ -331,7 +309,7 @@
         "title": "C1",
         "color": "blue",
         "group": "mvc1",
-        "desc": "Längd: 54.7m"
+        "desc": "DIKE <br>Längd: 54.7m"
       },
       "geometry": {
         "coordinates": [
@@ -346,7 +324,7 @@
         ],
         "type": "LineString"
       },
-      "id": 11
+      "id": 10
     },
     {
       "type": "Feature",
@@ -354,7 +332,7 @@
         "title": "C2",
         "color": "blue",
         "group": "mvc2",
-        "desc:": "Längd: 25.4m"
+        "desc:": "DIKE <br>Längd: 25.4m"
       },
       "geometry": {
         "coordinates": [
@@ -385,15 +363,15 @@
         ],
         "type": "LineString"
       },
-      "id": 12
+      "id": 11
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "c3: VÄGTRUMMA",
+        "title": "c3",
         "color": "#0091ff",
         "group": "mvc3",
-        "desc": "Längd: 7.2m"
+        "desc": "VÄGTRUMMA <br>Längd: 7.2m"
       },
       "geometry": {
         "coordinates": [
@@ -408,7 +386,7 @@
         ],
         "type": "LineString"
       },
-      "id": 13
+      "id": 12
     },
     {
       "type": "Feature",
@@ -416,7 +394,7 @@
         "title": "D",
         "color": "blue",
         "group": "mvd1",
-        "desc": "Längd: 35.7m"
+        "desc": "DIKE <br>Längd: 35.7m"
       },
       "geometry": {
         "coordinates": [
@@ -431,15 +409,15 @@
         ],
         "type": "LineString"
       },
-      "id": 14
+      "id": 13
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "e: TÄCKDIKE",
+        "title": "e",
         "color": "#0091ff",
         "group": "mve1",
-        "desc": "Längd: 44.2m"
+        "desc": "TÄCKDIKE <br>Längd: 44.2m"
       },
       "geometry": {
         "coordinates": [
@@ -466,15 +444,15 @@
         ],
         "type": "LineString"
       },
-      "id": 15
+      "id": 14
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "f: TÄCKDIKE",
+        "title": "f",
         "color": "#0091ff",
         "group": "mvf1",
-        "desc": "Längd: 61.3m"
+        "desc": "TÄCKDIKE <br>Längd: 61.3m"
       },
       "geometry": {
         "coordinates": [
@@ -493,7 +471,7 @@
         ],
         "type": "LineString"
       },
-      "id": 16
+      "id": 15
     }
   ]
 }

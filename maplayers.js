@@ -22,7 +22,6 @@ var groups = {
   mvb2: new L.LayerGroup(),
   mvb3: new L.LayerGroup(),
   mvb4: new L.LayerGroup(),
-  mvb5: new L.LayerGroup(),
   mvc1: new L.LayerGroup(),
   mvc2: new L.LayerGroup(),
   mvc3: new L.LayerGroup(),
@@ -75,7 +74,6 @@ var overlaysTree = {
                       { label: "B2", layer: groups.mvb2 },
                       { label: "B3", layer: groups.mvb3 },
                       { label: "B4", layer: groups.mvb4 },
-                      { label: "B5", layer: groups.mvb5 },
                     ]},
                     // Dike C 
                     { label: "C", selectAllCheckbox: true, collapsed: true, children: [
@@ -113,7 +111,7 @@ var overlaysTree = {
 
 //Skapa en lista med källor för geojson-data
 var sources = [
-  "data/ditches/mellanangarna/mellanangarna-vastra.geojson",
+  "data/ditches/fields/mellanangarna/mellanangarna-vastra.geojson",
   "data/toilets.geojson",
   "data/trashrooms.geojson",
 ];
