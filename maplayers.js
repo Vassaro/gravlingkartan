@@ -1,7 +1,9 @@
 //Definera länkar till basemaps (grundkartor) OpenStreetMap & satellit
 var basemaps = {
     OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</a>.'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</a>.',
+      maxNativeZoom: 18,
+      maxZoom: 22,
     }),
     Satellit: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
@@ -10,35 +12,25 @@ var basemaps = {
 
 //Definerar grupper
 var groups = {
-    campfirering: new L.LayerGroup(),
-    campfirerock: new L.LayerGroup(),
-    firehouse: new L.LayerGroup(),
-    campfireother: new L.LayerGroup(),
-    windshelterfire: new L.LayerGroup(),
-    windshelter: new L.LayerGroup(),
-    coopsite: new L.LayerGroup(),
-    obstaclecourse: new L.LayerGroup(),
-    bstt: new L.LayerGroup(),
-    vassarorunt: new L.LayerGroup(),
-    naturetrail: new L.LayerGroup(),
-    trapper: new L.LayerGroup(),
-    yellowtrail: new L.LayerGroup(),
-    pinktrail: new L.LayerGroup(),
-    bunkertrail: new L.LayerGroup(),
-    moorings: new L.LayerGroup(),
-    wildernesstrail: new L.LayerGroup(),
-    treetrail: new L.LayerGroup(),
-    pooptrail: new L.LayerGroup(),
-    knottrail: new L.LayerGroup(),
-    startrail: new L.LayerGroup(),
-    woodcrafttrail: new L.LayerGroup(),
-    naturegame: new L.LayerGroup(),
-    chargebox: new L.LayerGroup(),
-    toilets: new L.LayerGroup(),
-    trashrooms: new L.LayerGroup(),
-    // bookablerooms: new L.LayerGroup(),
-    beachtrail: new L.LayerGroup(),
-    // areas: new L.LayerGroup(),
+  mva1: new L.LayerGroup(),
+  mva2: new L.LayerGroup(),
+  mva3: new L.LayerGroup(),
+  mva4: new L.LayerGroup(),
+  mva5: new L.LayerGroup(),
+  mva6: new L.LayerGroup(),
+  mvb1: new L.LayerGroup(),
+  mvb2: new L.LayerGroup(),
+  mvb3: new L.LayerGroup(),
+  mvb4: new L.LayerGroup(),
+  mvb5: new L.LayerGroup(),
+  mvc1: new L.LayerGroup(),
+  mvc2: new L.LayerGroup(),
+  mvc3: new L.LayerGroup(),
+  mvd1: new L.LayerGroup(),
+  mve1: new L.LayerGroup(),
+  mvf1: new L.LayerGroup(),
+  toilets: new L.LayerGroup(),
+  trashrooms: new L.LayerGroup(),
 };
 
 //Grupperar kartbakgrunder
@@ -56,54 +48,52 @@ var overlaysTree = {
     selectAllCheckbox: 'Un/select all',
     children: [
         {
-            label: 'Lägerbålsplatser',
+          // DIKEN
+            label: 'Diken',
             selectAllCheckbox: true,
             collapsed: true,
             children: [
-                { label: 'Stockringar', layer: groups.campfirering },
-                { label: "Klipphällar", layer: groups.campfirerock },
-                { label: "Eldstad med tak", layer: groups.firehouse },
-                { label: "Andra", layer: groups.campfireother },
-            ]
-        },
-        {
-            label: "Vindskydd",
-            selectAllCheckbox: true,
-            collapsed: true,
-            children: [
-                { label: "Med eldstad", layer: groups.windshelterfire },
-                { label: "Utan eldstad", layer: groups.windshelter },
-            ]
-        },
-        {
-            label: "Programaktiviteter",
-            selectAllCheckbox: true,
-            collapsed: true,
-            children: [
-                { label: "Trapperspåret", layer: groups.trapper },
-                { label: "Vildmarksspåret", layer: groups.wildernesstrail },
-                { label: "Samarbetsgläntan", layer: groups.coopsite },
-                { label: "Hinderbanan", layer: groups.obstaclecourse },
-                { label: "Blood, sweat, tears and teamwork", layer: groups.bstt },
-                { label: "Naturleken", layer: groups.naturegame },
-                { label: "Trädtränan", layer: groups.treetrail },
-                { label: "Ovan molnen", layer: groups.startrail },
-                { label: "Knopspåret", layer: groups.knottrail },
-                { label: "Träck track", layer: groups.pooptrail },
-                { label: "Woodcraftspåret", layer: groups.woodcrafttrail },
-            ]
-        },
-        {
-            label: "Vandringsstigar",
-            selectAllCheckbox: true,
-            collapsed: true,
-            children: [
-                { label: "Vässarö runt", layer: groups.vassarorunt },
-                { label: "Naturnäran", layer: groups.naturetrail },
-                { label: "Berättelsen", layer: groups.beachtrail },
-                { label: "Bunkerspåret", layer: groups.bunkertrail },
-                { label: "Rosa spåret", layer: groups.pinktrail },
-                { label: "Gula spåret", layer: groups.yellowtrail },
+
+
+              // MELLANÄNGARNA
+                { label: 'Mellanängarna', selectAllCheckbox: true, children: [
+
+                  // Västra mellanängarna
+                  { label: "Västra", selectAllCheckbox: true, children: [
+                    // Dike A 
+                    { label: "A", selectAllCheckbox: true, children: [
+                      { label: "A1", layer: groups.mva1 },
+                      { label: "A2", layer: groups.mva2 },
+                      { label: "A3", layer: groups.mva3 },
+                      { label: "A4", layer: groups.mva4 },
+                      { label: "a5", layer: groups.mva5 },
+                      { label: "A6", layer: groups.mva6 },
+                    ]},
+                    // Dike B 
+                    { label: "B", selectAllCheckbox: true, children: [
+                      { label: "B1", layer: groups.mvb1 },
+                      { label: "B2", layer: groups.mvb2 },
+                      { label: "B3", layer: groups.mvb3 },
+                      { label: "B4", layer: groups.mvb4 },
+                      { label: "B5", layer: groups.mvb5 },
+                    ]},
+                    // Dike C 
+                    { label: "C", selectAllCheckbox: true, children: [
+                      { label: "C1", layer: groups.mvc1 },
+                      { label: "C2", layer: groups.mvc2 },
+                      { label: "c3", layer: groups.mvc3 },
+                    ]},
+                    // Dike D 
+                    { label: "D", layer: groups.mvd1 },
+                    //Dike e 
+                    { label: "e", layer: groups.mve1 },
+                    // Dike f 
+                    { label: "f", layer: groups.mvf1 },
+                  ]},
+
+                ]},
+
+
             ]
         },
         {
@@ -111,10 +101,8 @@ var overlaysTree = {
             selectAllCheckbox: false,
             collapsed: false,
             children: [
-                { label: "Naturhamnar", layer: groups.moorings },
-                { label: "Laddlådor", layer: groups.chargebox },
-		{ label: "Dass", layer: groups.toilets },
-		{ label: "Soprum", layer: groups.trashrooms },
+		            { label: "Dass", layer: groups.toilets },
+		            { label: "Soprum", layer: groups.trashrooms },
 
             ]
             // "Lokaler": groups.bookablerooms,
@@ -125,15 +113,9 @@ var overlaysTree = {
 
 //Skapa en lista med källor för geojson-data
 var sources = [
-    "data/trapper.geojson",
-    "data/trails.geojson",
-    "data/activitySites.geojson",
-    "data/moorings.geojson",
-    "data/campfireSites.geojson",
-    "data/chargeboxes.geojson",
-    "data/toilets.geojson",
-    "data/trashrooms.geojson",
-    // "data/areas.geojson"
+  "data/ditches/mellanangarna/mellanangarna-vastra.geojson",
+  "data/toilets.geojson",
+  "data/trashrooms.geojson",
 ];
 
 // Hämta geoJSON-objekt från varje fil
