@@ -1,4 +1,4 @@
-//Definera länkar till basemaps (grundkartor) OpenStreetMap & satellit
+// Define links to basemaps, attribution, and zoom properties 
 var basemaps = {
     OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</a>.',
@@ -10,8 +10,10 @@ var basemaps = {
     })
 };
 
-//Definerar grupper
+// Define groups
 var groups = {
+
+  // Ditches 
   mva1: new L.LayerGroup(),
   mva2: new L.LayerGroup(),
   mva3: new L.LayerGroup(),
@@ -32,7 +34,7 @@ var groups = {
   trashrooms: new L.LayerGroup(),
 };
 
-//Grupperar kartbakgrunder
+// Group the basemaps
 var baseTree = {
     label: 'Kartbakgrunder',
     children: [
@@ -41,59 +43,57 @@ var baseTree = {
     ]
 };
 
-//Grupperar kartlager
+// Group maplayers
 var overlaysTree = {
-    label: "Kartfilter",
-    selectAllCheckbox: 'Un/select all',
-    children: [
-        {
-          // DIKEN
-            label: 'Diken',
-            selectAllCheckbox: true,
-            collapsed: true,
-            children: [
+  label: "Kartfilter",
+  selectAllCheckbox: 'Un/select all',
+  children: [
+    {
+      // Ditches
+      label: 'Diken',
+      selectAllCheckbox: true,
+      collapsed: true,
+      children: [
 
 
-              // MELLANÄNGARNA
-                { label: 'Mellanängarna', selectAllCheckbox: true, collapsed: true, children: [
+        // Mellanängarna
+        { label: 'Mellanängarna', selectAllCheckbox: true, collapsed: true, children: [
 
-                  // Västra mellanängarna
-                  { label: "Västra", selectAllCheckbox: true, collapsed: true, children: [
-                    // Dike A 
-                    { label: "A", selectAllCheckbox: true, collapsed: true, children: [
-                      { label: "A1", layer: groups.mva1 },
-                      { label: "A2", layer: groups.mva2 },
-                      { label: "A3", layer: groups.mva3 },
-                      { label: "A4", layer: groups.mva4 },
-                      { label: "a5", layer: groups.mva5 },
-                      { label: "A6", layer: groups.mva6 },
-                    ]},
-                    // Dike B 
-                    { label: "B", selectAllCheckbox: true, collapsed: true, children: [
-                      { label: "B1", layer: groups.mvb1 },
-                      { label: "B2", layer: groups.mvb2 },
-                      { label: "B3", layer: groups.mvb3 },
-                      { label: "B4", layer: groups.mvb4 },
-                    ]},
-                    // Dike C 
-                    { label: "C", selectAllCheckbox: true, collapsed: true, children: [
-                      { label: "C1", layer: groups.mvc1 },
-                      { label: "C2", layer: groups.mvc2 },
-                      { label: "c3", layer: groups.mvc3 },
-                    ]},
-                    // Dike D 
-                    { label: "D", layer: groups.mvd1 },
-                    //Dike e 
-                    { label: "e", layer: groups.mve1 },
-                    // Dike f 
-                    { label: "f", layer: groups.mvf1 },
-                  ]},
+          // Västra mellanängarna
+          { label: "Västra", selectAllCheckbox: true, collapsed: true, children: [
+            // Ditch A
+            { label: "A", selectAllCheckbox: true, collapsed: true, children: [
+              { label: "A1", layer: groups.mva1 },
+              { label: "A2", layer: groups.mva2 },
+              { label: "A3", layer: groups.mva3 },
+              { label: "A4", layer: groups.mva4 },
+              { label: "a5", layer: groups.mva5 },
+              { label: "A6", layer: groups.mva6 },
+            ]},
+            // Ditch B
+            { label: "B", selectAllCheckbox: true, collapsed: true, children: [
+              { label: "B1", layer: groups.mvb1 },
+              { label: "B2", layer: groups.mvb2 },
+              { label: "B3", layer: groups.mvb3 },
+              { label: "B4", layer: groups.mvb4 },
+            ]},
+            // Ditch C 
+            { label: "C", selectAllCheckbox: true, collapsed: true, children: [
+              { label: "C1", layer: groups.mvc1 },
+              { label: "C2", layer: groups.mvc2 },
+              { label: "c3", layer: groups.mvc3 },
+            ]},
+            //  Ditch D 
+            { label: "D", layer: groups.mvd1 },
+            //  Ditch e 
+            { label: "e", layer: groups.mve1 },
+            //  Ditch f 
+            { label: "f", layer: groups.mvf1 },
+          ]},
 
-                ]},
+        ]},
 
-
-            ]
-        },
+    ]},
         {
             label: "Annat",
             selectAllCheckbox: false,
@@ -109,14 +109,14 @@ var overlaysTree = {
     ]
 }
 
-//Skapa en lista med källor för geojson-data
+// List the sources for GeoJSON-data
 var sources = [
   "data/ditches/fields/mellanangarna/mellanangarna-vastra.geojson",
   "data/toilets.geojson",
   "data/trashrooms.geojson",
 ];
 
-// Hämta geoJSON-objekt från varje fil
+// Fetch GeoJSON-objects from each file
 sources.forEach(source => {
     fetch(source)
         .then(response => response.json())
@@ -155,7 +155,7 @@ sources.forEach(source => {
         });
 });
 
-// Inställningar till lagerkontrollen
+// Config for the layer controls
 var options = {
     closedSymbol: "&#10010;",
     openedSymbol: "<b>&minus;</b>",
@@ -167,7 +167,7 @@ var options = {
     labelIsSelector: "both"
 };
 
-// Fönster ut ur filen
+// Exported windows
 window.MapLayers = {
     BaseTree: baseTree,
     OverlaysTree: overlaysTree,
