@@ -10,8 +10,22 @@ var basemaps = {
     })
 };
 
-// Define the style of dashed lines
-var dashStyle = "2, 10";
+const STYLES = {
+
+  ditch_closed: {
+    dashArray: "2, 10",
+    color: "#003300",
+    weight: 5,
+    opacity: 1 
+  },
+
+  ditch_open: {
+    color: "#003300",
+    weight: 5,
+    opacity: 1 
+  },
+
+};
 
 // Define groups
 var groups = {
@@ -144,13 +158,19 @@ sources.forEach(source => {
                     }
                     return thisMarker;
                 },
+
                 style: function (feature) {
-                    return {
-                      color: feature.properties.color,
-                      weight: 7,
-                      opacity: 1,
-                      dashArray: feature.properties.dashed ? dashStyle : null,
-                    };
+                    switch (feature.properties.type) {
+
+                      case "ditch_closed": {
+                        return STYLES.ditch_closed;
+                        break;
+                      }
+                      case "ditch_open": {
+                        return STYLES.ditch_open;
+                        break;
+                      }
+                    }
                 }
             });
         })

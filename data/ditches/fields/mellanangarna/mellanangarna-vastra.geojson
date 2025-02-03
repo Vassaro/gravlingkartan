@@ -5,10 +5,9 @@
       "type": "Feature",
       "properties": {
         "title": "A1",
-        "color": "blue",
         "group": "mva1",
         "desc": "DIKE <br>Längd: 14.2m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -32,7 +31,7 @@
         "color": "blue",
         "group": "mva2",
         "desc": "DIKE <br>Längd: 15.9m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -53,10 +52,9 @@
       "type": "Feature",
       "properties": {
         "title": "A3",
-        "color": "blue",
         "group": "mva3",
         "desc": "Längd: 48.0m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -81,10 +79,9 @@
       "type": "Feature",
       "properties": {
         "title": "A4",
-        "color": "blue",
         "group": "mva4",
         "desc": "DIKE <br>Längd: 56.3m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -117,10 +114,9 @@
       "type": "Feature",
       "properties": {
         "title": "a5",
-        "color": "#0091ff",
         "group": "mva5",
         "desc": "VÄGTRUMMA <br>Längd: 23.3m",
-        "dashed": true
+        "type": "ditch_closed"
       },
       "geometry": {
         "coordinates": [
@@ -141,10 +137,9 @@
       "type": "Feature",
       "properties": {
         "title": "A6",
-        "color": "blue",
         "group": "mva6",
         "desc": "DIKE <br>Längd: 33.6m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -185,10 +180,9 @@
       "type": "Feature",
       "properties": {
         "title": "B1",
-        "color": "blue",
         "group": "mvb1",
         "desc": "DIKE <br>Längd: 7.6m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -209,10 +203,9 @@
       "type": "Feature",
       "properties": {
         "title": "B2",
-        "color": "blue",
         "group": "mvb2",
         "desc": "DIKE <br>Längd: 59.0m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -233,10 +226,9 @@
       "type": "Feature",
       "properties": {
         "title": "B3",
-        "color": "blue",
         "group": "mvb3",
         "desc": "DIKE <br>Längd: 28.0m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -265,10 +257,9 @@
       "type": "Feature",
       "properties": {
         "title": "B4",
-        "color": "blue",
         "group": "mvb4",
         "desc": "DIKE <br>Längd: 99.3m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -317,10 +308,9 @@
       "type": "Feature",
       "properties": {
         "title": "C1",
-        "color": "blue",
         "group": "mvc1",
         "desc": "DIKE <br>Längd: 54.7m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -341,10 +331,9 @@
       "type": "Feature",
       "properties": {
         "title": "C2",
-        "color": "blue",
         "group": "mvc2",
         "desc": "DIKE <br>Längd: 25.4m",
-        "dashed": false
+        "type": "ditch_open"
       },
       "geometry": {
         "coordinates": [
@@ -381,10 +370,9 @@
       "type": "Feature",
       "properties": {
         "title": "c3",
-        "color": "#0091ff",
         "group": "mvc3",
         "desc": "VÄGTRUMMA <br>Längd: 7.2m",
-        "dashed": true
+        "type": "ditch_closed"
       },
       "geometry": {
         "coordinates": [
@@ -405,10 +393,9 @@
       "type": "Feature",
       "properties": {
         "title": "D",
-        "color": "blue",
         "group": "mvd1",
         "desc": "DIKE <br>Längd: 35.7m",
-        "dashed": false 
+        "type": "ditch_closed"
       },
       "geometry": {
         "coordinates": [
@@ -429,10 +416,9 @@
       "type": "Feature",
       "properties": {
         "title": "e",
-        "color": "#0091ff",
         "group": "mve1",
         "desc": "TÄCKDIKE <br>Längd: 44.2m",
-        "dashed": true
+        "type": "ditch_closed"
       },
       "geometry": {
         "coordinates": [
@@ -465,10 +451,9 @@
       "type": "Feature",
       "properties": {
         "title": "f",
-        "color": "#0091ff",
         "group": "mvf1",
         "desc": "TÄCKDIKE <br>Längd: 61.3m",
-        "dashed": true
+        "type": "ditch_closed"
       },
       "geometry": {
         "coordinates": [
