@@ -7,7 +7,8 @@
         "title": "A1",
         "color": "blue",
         "group": "mva1",
-        "desc": "DIKE <br>Längd: 14.2m"
+        "desc": "DIKE <br>Längd: 14.2m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -30,7 +31,8 @@
         "title": "A2",
         "color": "blue",
         "group": "mva2",
-        "desc": "DIKE <br>Längd: 15.9m"
+        "desc": "DIKE <br>Längd: 15.9m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -53,7 +55,8 @@
         "title": "A3",
         "color": "blue",
         "group": "mva3",
-        "desc": "Längd: 48.0m"
+        "desc": "Längd: 48.0m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -80,7 +83,8 @@
         "title": "A4",
         "color": "blue",
         "group": "mva4",
-        "desc": "DIKE <br>Längd: 56.3m"
+        "desc": "DIKE <br>Längd: 56.3m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -115,7 +119,8 @@
         "title": "a5",
         "color": "#0091ff",
         "group": "mva5",
-        "desc": "VÄGTRUMMA <br>Längd: 23.3m"
+        "desc": "VÄGTRUMMA <br>Längd: 23.3m",
+        "dashed": true
       },
       "geometry": {
         "coordinates": [
@@ -138,7 +143,8 @@
         "title": "A6",
         "color": "blue",
         "group": "mva6",
-        "desc": "DIKE <br>Längd: 33.6m"
+        "desc": "DIKE <br>Längd: 33.6m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -181,7 +187,8 @@
         "title": "B1",
         "color": "blue",
         "group": "mvb1",
-        "desc": "DIKE <br>Längd: 7.6m"
+        "desc": "DIKE <br>Längd: 7.6m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -204,7 +211,8 @@
         "title": "B2",
         "color": "blue",
         "group": "mvb2",
-        "desc": "DIKE <br>Längd: 59.0m"
+        "desc": "DIKE <br>Längd: 59.0m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -227,7 +235,8 @@
         "title": "B3",
         "color": "blue",
         "group": "mvb3",
-        "desc": "DIKE <br>Längd: 28.0m"
+        "desc": "DIKE <br>Längd: 28.0m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -258,7 +267,8 @@
         "title": "B4",
         "color": "blue",
         "group": "mvb4",
-        "desc": "DIKE <br>Längd: 99.3m"
+        "desc": "DIKE <br>Längd: 99.3m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -309,7 +319,8 @@
         "title": "C1",
         "color": "blue",
         "group": "mvc1",
-        "desc": "DIKE <br>Längd: 54.7m"
+        "desc": "DIKE <br>Längd: 54.7m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -332,7 +343,8 @@
         "title": "C2",
         "color": "blue",
         "group": "mvc2",
-        "desc:": "DIKE <br>Längd: 25.4m"
+        "desc": "DIKE <br>Längd: 25.4m",
+        "dashed": false
       },
       "geometry": {
         "coordinates": [
@@ -371,7 +383,8 @@
         "title": "c3",
         "color": "#0091ff",
         "group": "mvc3",
-        "desc": "VÄGTRUMMA <br>Längd: 7.2m"
+        "desc": "VÄGTRUMMA <br>Längd: 7.2m",
+        "dashed": true
       },
       "geometry": {
         "coordinates": [
@@ -394,7 +407,8 @@
         "title": "D",
         "color": "blue",
         "group": "mvd1",
-        "desc": "DIKE <br>Längd: 35.7m"
+        "desc": "DIKE <br>Längd: 35.7m",
+        "dashed": false 
       },
       "geometry": {
         "coordinates": [
@@ -417,7 +431,8 @@
         "title": "e",
         "color": "#0091ff",
         "group": "mve1",
-        "desc": "TÄCKDIKE <br>Längd: 44.2m"
+        "desc": "TÄCKDIKE <br>Längd: 44.2m",
+        "dashed": true
       },
       "geometry": {
         "coordinates": [
@@ -452,7 +467,8 @@
         "title": "f",
         "color": "#0091ff",
         "group": "mvf1",
-        "desc": "TÄCKDIKE <br>Längd: 61.3m"
+        "desc": "TÄCKDIKE <br>Längd: 61.3m",
+        "dashed": true
       },
       "geometry": {
         "coordinates": [

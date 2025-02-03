@@ -10,6 +10,9 @@ var basemaps = {
     })
 };
 
+// Define the style of dashed lines
+var dashStyle = "2, 10";
+
 // Define groups
 var groups = {
 
@@ -143,9 +146,10 @@ sources.forEach(source => {
                 },
                 style: function (feature) {
                     return {
-                        color: feature.properties.color,
-                        weight: 7,
-                        opacity: 1,
+                      color: feature.properties.color,
+                      weight: 7,
+                      opacity: 1,
+                      dashArray: feature.properties.dashed ? dashStyle : null,
                     };
                 }
             });
