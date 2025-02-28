@@ -42,6 +42,7 @@ var sources = [
   "data/ditches/fields/mellanangarna-ostra.geojson",
   "data/ditches/fields/centralangarna.geojson",
   "data/ditches/fields/ostra.geojson",
+  "data/ditches/fields/norra.geojson",
   "data/toilets.geojson",
   "data/trashrooms.geojson",
 ];
