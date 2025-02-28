@@ -265,6 +265,24 @@ var overlaysTree = {
           { label: "G", layer: groups.cg },
           { label: "H", layer: groups.ch },
           { label: "I", layer: groups.ci },
+          // Skrak
+          { label: "Krondiket", selectAllCheckbox: true, collapsed: true, children: [
+            { label: "A", layer: groups.sa },
+            { label: "B", layer: groups.sb },
+          ]},
+        ]},
+
+
+        // ÖSTRA 
+        { label: "Östra Ängarna", selectAllCheckbox: true, collapsed: true, children: [
+          { label: "A", layer: groups.oa },
+          { label: "B", layer: groups.ob },
+          { label: "C", layer: groups.oc },
+          // Överängen
+          { label: "Överängen", selectAllCheckbox: true, collapsed: true, children: [
+            { label: "A", layer: groups.ooa },
+            { label: "B", layer: groups.oob },
+          ]}
         ]}
 
     ]},

@@ -124,6 +124,18 @@ var groups = {
   cg: new L.LayerGroup(),
   ch: new L.LayerGroup(),
   ci: new L.LayerGroup(),
+  // skrak
+  sa: new L.LayerGroup(),
+  sb: new L.LayerGroup(),
+
+
+  // EAST 
+  oa: new L.LayerGroup(),
+  ob: new L.LayerGroup(),
+  oc: new L.LayerGroup(),
+  // Överängen
+  ooa: new L.LayerGroup(),
+  oob: new L.LayerGroup(),
 
   // OTHERS
   toilets: new L.LayerGroup(),

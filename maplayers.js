@@ -38,9 +38,10 @@ var baseTree = {
 
 // List the sources for GeoJSON-data
 var sources = [
-  "data/ditches/fields/mellanangarna/mellanangarna-vastra.geojson",
-  "data/ditches/fields/mellanangarna/mellanangarna-ostra.geojson",
-  "data/ditches/fields/centralangarna/centralangarna.geojson",
+  "data/ditches/fields/mellanangarna-vastra.geojson",
+  "data/ditches/fields/mellanangarna-ostra.geojson",
+  "data/ditches/fields/centralangarna.geojson",
+  "data/ditches/fields/ostra.geojson",
   "data/toilets.geojson",
   "data/trashrooms.geojson",
 ];
