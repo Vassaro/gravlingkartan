@@ -5,8 +5,8 @@
       "type": "Feature",
       "properties": {
         "title": "A1",
-        "group": "mva1",
-        "desc": "DIKE <br>Längd: 14.2m",
+        "group": "mva",
+        "desc": "DIKE <br>Längd: 134.4m",
         "type": "ditch_open"
       },
       "geometry": {
@@ -18,46 +18,7 @@
           [
             18.693634553414938,
             60.25869942184556
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 0
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "A2",
-        "color": "blue",
-        "group": "mva2",
-        "desc": "DIKE <br>Längd: 15.9m",
-        "type": "ditch_open"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            18.693634553414938,
-            60.25869942184556
           ],
-          [
-            18.69392190604742,
-            60.25868949948406
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 1
-    },
-{
-      "type": "Feature",
-      "properties": {
-        "title": "A3",
-        "group": "mva3",
-        "desc": "Längd: 48.0m",
-        "type": "ditch_open"
-      },
-      "geometry": {
-        "coordinates": [
           [
             18.6939351706109,
             60.258689146023386
@@ -66,25 +27,6 @@
             18.694789635992038,
             60.258658599692325
           ],
-          [
-            18.694802203972046,
-            60.258656803227154
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 2
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "A4",
-        "group": "mva4",
-        "desc": "DIKE <br>Längd: 56.3m",
-        "type": "ditch_open"
-      },
-      "geometry": {
-        "coordinates": [
           [
             18.694802203972046,
             60.258656803227154
@@ -108,13 +50,13 @@
         ],
         "type": "LineString"
       },
-      "id": 3
+      "id": 0
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "a5",
-        "group": "mva5",
+        "title": "a2",
+        "group": "mva",
         "desc": "VÄGTRUMMA <br>Längd: 23.3m",
         "type": "ditch_closed"
       },
@@ -131,13 +73,13 @@
         ],
         "type": "LineString"
       },
-      "id": 4
+      "id": 1
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "A6",
-        "group": "mva6",
+        "title": "A3",
+        "group": "mva",
         "desc": "DIKE <br>Längd: 33.6m",
         "type": "ditch_open"
       },
@@ -174,14 +116,14 @@
         ],
         "type": "LineString"
       },
-      "id": 5
+      "id": 2
     },
     {
       "type": "Feature",
       "properties": {
         "title": "B1",
-        "group": "mvb1",
-        "desc": "DIKE <br>Längd: 7.6m",
+        "group": "mvb",
+        "desc": "DIKE <br>Längd: 94.6m",
         "type": "ditch_open"
       },
       "geometry": {
@@ -193,45 +135,7 @@
           [
             18.69484014809771,
             60.25872262098619
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 6
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "B2",
-        "group": "mvb2",
-        "desc": "DIKE <br>Längd: 59.0m",
-        "type": "ditch_open"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            18.69484014809771,
-            60.25872262098619
           ],
-          [
-            18.694319363277913,
-            60.25918623012461
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 7
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "B3",
-        "group": "mvb3",
-        "desc": "DIKE <br>Längd: 28.0m",
-        "type": "ditch_open"
-      },
-      "geometry": {
-        "coordinates": [
           [
             18.694319363277913,
             60.25918623012461
@@ -251,13 +155,13 @@
         ],
         "type": "LineString"
       },
-      "id": 8
+      "id": 3
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "B4",
-        "group": "mvb4",
+        "title": "B2",
+        "group": "mvb",
         "desc": "DIKE <br>Längd: 99.3m",
         "type": "ditch_open"
       },
@@ -302,14 +206,14 @@
         ],
         "type": "LineString"
       },
-      "id": 9
+      "id": 4
     },
     {
       "type": "Feature",
       "properties": {
         "title": "C1",
-        "group": "mvc1",
-        "desc": "DIKE <br>Längd: 54.7m",
+        "group": "mvc",
+        "desc": "DIKE <br>Längd: 80.1m",
         "type": "ditch_open"
       },
       "geometry": {
@@ -318,25 +222,6 @@
             18.694393942754147,
             60.25912520080357
           ],
-          [
-            18.695346769070085,
-            60.25926009972531
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 10
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "C2",
-        "group": "mvc2",
-        "desc": "DIKE <br>Längd: 25.4m",
-        "type": "ditch_open"
-      },
-      "geometry": {
-        "coordinates": [
           [
             18.695346769070085,
             60.25926009972531
@@ -364,13 +249,13 @@
         ],
         "type": "LineString"
       },
-      "id": 11
+      "id": 5
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "c3",
-        "group": "mvc3",
+        "title": "c2",
+        "group": "mvc",
         "desc": "VÄGTRUMMA <br>Längd: 7.2m",
         "type": "ditch_closed"
       },
@@ -387,13 +272,13 @@
         ],
         "type": "LineString"
       },
-      "id": 12
+      "id": 6
     },
     {
       "type": "Feature",
       "properties": {
         "title": "D",
-        "group": "mvd1",
+        "group": "mvd",
         "desc": "DIKE <br>Längd: 35.7m",
         "type": "ditch_closed"
       },
@@ -410,13 +295,13 @@
         ],
         "type": "LineString"
       },
-      "id": 13
+      "id": 7 
     },
     {
       "type": "Feature",
       "properties": {
         "title": "e",
-        "group": "mve1",
+        "group": "mve",
         "desc": "TÄCKDIKE <br>Längd: 44.2m",
         "type": "ditch_closed"
       },
@@ -445,13 +330,13 @@
         ],
         "type": "LineString"
       },
-      "id": 14
+      "id": 8
     },
     {
       "type": "Feature",
       "properties": {
         "title": "f",
-        "group": "mvf1",
+        "group": "mvf",
         "desc": "TÄCKDIKE <br>Längd: 61.3m",
         "type": "ditch_closed"
       },
@@ -472,7 +357,7 @@
         ],
         "type": "LineString"
       },
-      "id": 15
+      "id": 9
     },
     {
       "type": "Feature",
@@ -480,7 +365,7 @@
         "title": "G",
         "desc": "Längd: 36.8m",
         "type": "ditch_open",
-        "group": "mvg1"
+        "group": "mvg"
       },
       "geometry": {
         "coordinates": [
@@ -511,7 +396,7 @@
         ],
         "type": "LineString"
       },
-      "id": 0
+      "id": 10
     }
   ]
 }
