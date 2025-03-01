@@ -95,8 +95,8 @@ sources.forEach(source => {
 
 // Config for the layer controls
 var options = {
-    closedSymbol: '&#x2b9e',
-    openedSymbol: '&#x2b9f',
+    closedSymbol: '&#x25b6',
+    openedSymbol: '&#x25bc',
     spaceSymbol: " ",
     selectorBack: false,
     namedToggle: false,
