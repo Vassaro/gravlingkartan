@@ -95,20 +95,20 @@ sources.forEach(source => {
 
 // Config for the layer controls
 var options = {
-    closedSymbol: '<big>&#x25b6</big>',
-    openedSymbol: '<big>&#x25bc</big>',
-    spaceSymbol: " ",
-    selectorBack: false,
-    namedToggle: false,
-    collapseAll: "Kollapsa alla",
-    expandAll: "Expandera alla",
-    labelIsSelector: "both"
+  closedSymbol: '<i style="font-size: 11pt">&#x25b6</i>',
+  openedSymbol: '<i style="font-size: 14pt">&#x25bc</i>',
+  spaceSymbol: " ",
+  selectorBack: false,
+  namedToggle: false,
+  collapseAll: "Kollapsa alla",
+  expandAll: "Expandera alla",
+  labelIsSelector: "both"
 };
 
 // Exported windows
 window.MapLayers = {
-    OverlaysTree: overlaysTree,
-    BaseTree: baseTree,
-    Basemaps: basemaps,
-    Options: options
+  OverlaysTree: overlaysTree,
+  BaseTree: baseTree,
+  Basemaps: basemaps,
+  Options: options
 }
