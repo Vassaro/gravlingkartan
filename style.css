@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.centered-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 body {
 	margin: 0;
 	padding: 0;
