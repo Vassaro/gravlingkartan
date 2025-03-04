@@ -14,13 +14,13 @@ const STYLES = {
 
   ditch_closed: {
     dashArray: "2, 10",
-    color: "#003300",
+    color: "#33ccff",
     weight: 5,
-    opacity: 1 
+    opacity: 0
   },
 
   ditch_open: {
-    color: "#003300",
+    color: "#33ccff",
     weight: 5,
     opacity: 1 
   },
@@ -59,6 +59,9 @@ sources.forEach(source => {
           }
           if (feature.properties.skip !== true) { // || true) { // för att visa andra stigar
             eval("groups." + feature.properties.group).addLayer(layer);
+          }
+          if (feature.properties.type == "ditch_open" || feature.properties.type == "ditch_closed") {
+            layer.setText(" ⯈ ", { repeat: true, attributes: { fill: "#0099ff" }});
           }
         },
         pointToLayer: function (feature, latlng) {
