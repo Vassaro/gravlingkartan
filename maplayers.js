@@ -10,22 +10,6 @@ var basemaps = {
   })
 };
 
-const STYLES = {
-
-  ditch_closed: {
-    dashArray: "2, 10",
-    color: "#33ccff",
-    weight: 5,
-    opacity: 0
-  },
-
-  ditch_open: {
-    color: "#33ccff",
-    weight: 5,
-    opacity: 1 
-  },
-
-};
 
 // Group the basemaps
 var baseTree = {
@@ -60,9 +44,7 @@ sources.forEach(source => {
           if (feature.properties.skip !== true) { // || true) { // för att visa andra stigar
             eval("groups." + feature.properties.group).addLayer(layer);
           }
-          if (feature.properties.type == "ditch_open" || feature.properties.type == "ditch_closed") {
-            layer.setText(" ⯈ ", { repeat: true, attributes: { fill: "#0099ff" }});
-          }
+          decorateLine(layer, feature.properties.type);
         },
         pointToLayer: function (feature, latlng) {
           if (feature.properties.icon) {
@@ -76,18 +58,8 @@ sources.forEach(source => {
           return thisMarker;
         },
 
-        style: function (feature) {
-          switch (feature.properties.type) {
-
-            case "ditch_closed": {
-              return STYLES.ditch_closed;
-              break;
-            }
-            case "ditch_open": {
-              return STYLES.ditch_open;
-              break;
-            }
-          }
+        style: function (feature) { 
+          return styleLine(feature.properties.type); 
         }
       });
     })
