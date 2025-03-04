@@ -70,14 +70,12 @@ sources.forEach(source => {
 
 // Config for the layer controls
 var options = {
-  closedSymbol: '<i style="font-size: 11pt">&#x25b6</i>',
-  openedSymbol: '<i style="font-size: 14pt">&#x25bc</i>',
-  spaceSymbol: " ",
+  closedSymbol: '<i class="fa fa-solid fa-chevron-right"></i>',
+  openedSymbol: '<i class="fa fa-solid fa-chevron-down"></i>',
   selectorBack: false,
   namedToggle: false,
-  collapseAll: "Kollapsa alla",
-  expandAll: "Expandera alla",
-  labelIsSelector: "both"
+  labelIsSelector: "both",
+  collapsed: false,
 };
 
 // Exported windows

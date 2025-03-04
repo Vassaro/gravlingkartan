@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+  <link rel="stylesheet" href="./src/leaflet-sidebar.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="./node_modules/leaflet-textpath/leaflet.textpath.js"></script>
@@ -28,13 +30,73 @@
 
 <body>
 
-  <div id="iconsrectangle" class="rectangle">
-    <center>
-      <a href="https://vassaro.se/"><img id="vassaroLogo" src="img/vassaro_logga.jpg" alt="Vässarös Logotyp" width="40px"></a>
-    </center>
-  </div>
+  <div id="sidebar" class="sidebar collapsed">
+    <!-- Definiera flikar -->
+    <div class="sidebar-tabs">
+        <ul role="tablist">
+            <li><a href="#menu" role="tab"><i class="fa fa-solid fa-bars"></i></a></li>
+            <li><a href="#qr" role="tab"><i class="fa fa-solid fa-sharp fa-qrcode"></i></a></li>
+            <!-- <li><a href="https://github.com/danielmartling/trappermapper/" role="tab" target="_blank"><i -->
+            <!-- class="fa fa-github"></i></a></li> -->
+            <li><a href="#filter" id="filter" role="tab"><img src="icons/filter.svg" width="40px"></a></li>
+            </li>
+        </ul>
+        <ul role="tablist">
+            <div id="button-box"></div>
+        </ul>
+    </div>
+
+           <!-- Flikpaneler och innehåll -->
+           <div class="sidebar-content">
+            <div class="sidebar-pane" id="menu">
+                <h1 class="sidebar-header">
+                    Grävlingkartan 
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <p>Det här är en karta framtagen av Joakim "Jocke" Hertberg, för bruk i Vässarös verksamhet. Den är baserad på projektet 
+                <a href="https://github.com/danieltmartling/trappermapper/"><i class="fa fa-github"></i>Trappermapper</a>.</p>
+                <p>Under filtret till vänster kan du välja vad du vill se på kartan. Du kan också klicka på frågetecknet för en teckenförklaring.</p>
+                <p>Använd inte kartan som ett navigationsverktyg på vattnet.</p>
+              <div class="centered">
+                <img src="./img/vassaro_logga.png" id="vassaroLogo">
+              </div>
+            </div>
+
+
+            <div class="sidebar-pane" id="qr">
+                <h1 class="sidebar-header">
+                    QR-kod
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <p>Du hittar enklast tillbaka till den här kartan genom att spara länken eller skanna QR-koden med din
+                    mobilkamera:<br><br>
+                    <img src="img/qr/qr-gravlingkartan.png" alt="QR-kod som leder till den här kartan!" width="100%"><br>
+                </p>
+            </div>
+
+            <div class="sidebar-pane" id="filter">
+                <h1 class="sidebar-header">
+                    Kartfilter
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <div>
+                    <h2>Kartbakgrunder</h2>
+                    <input type="radio" id="osmradio" name="selectBackground" value="OpenStreetMap" checked>
+                    <label for="osmradio">OpenStreetMap</label><br>
+                    <input type="radio" id="satradio" name="selectBackground" value="Satellit">
+                    <label for="satradio">Satellit</label>
+                </div>
+                <div>
+                    <h2>Kartfilter</h2>
+                    <div id="filter-box" style="padding-top: 0px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <div id="map"></div>
+
+  <script src="./src/leaflet-sidebar.js"></script>
 
   <script>
     // Create the maps with restrictions on zoom
@@ -54,18 +116,52 @@
       lfmap.panInsideBounds(bounds, { animate: false });
     });
 
+    var layerControl = L.control.layers.tree(null, MapLayers.OverlaysTree, MapLayers.Options).addTo(lfmap);
+
+    var sidebar = L.control.sidebar('sidebar').addTo(lfmap);
+
     // Configs and activation of location function - https://github.com/domoritz/leaflet-locatecontrol - For settings of locate.
     var lc = L.control
       .locate({
-        position: "topleft",
         strings: {
           title: "Visar din nuvarande position!"
         }
       }).addTo(lfmap);
 
+    var zoom = L.control.zoom().addTo(lfmap);
+
+    var scale = L.control.scale({
+      position: "bottomright",
+      metric: true,
+    }).addTo(lfmap);
+
+    var objects = [lc, zoom];
+    var buttonbox = document.getElementById("button-box");
+    var filterbox = document.getElementById("filter-box");
+    function setParent(child, newParent) {
+      newParent.appendChild(child.getContainer());
+    };
+    objects.forEach(element => {
+      setParent(element, buttonbox);
+    });
+    setParent(layerControl, filterbox);
+
+    
+    // Switch Basemaps
+    if (document.querySelector('input[name="selectBackground"]')) {
+      document.querySelectorAll('input[name="selectBackground"]').forEach((elem) => {
+        elem.addEventListener("change", function (event) {
+          var item = event.target.value;
+          for (let key in MapLayers.Basemaps) {
+            eval("MapLayers.Basemaps." + key).remove();
+          };
+          eval("MapLayers.Basemaps." + key).addTo(lfmap);
+        });
+      });
+    }
+
+
     // Add layers and controls to the map
-    // L.control.groupedLayers(MapLayers.Basemaps, MapLayers.Overlays, MapLayers.Options).addTo(lfmap);
-    L.control.layers.tree(MapLayers.BaseTree, MapLayers.OverlaysTree, MapLayers.Options).addTo(lfmap);
   </script>
 </body>
 
