@@ -3,13 +3,12 @@ body {
     padding: 0;
 }
 
-#badger {
-  height: 5rem;
+#vassaroLogo {
   width: 7rem;
 }
 
 h3 {
-  color: white;
+  color: black;
   font-weight: bolder;
 }
 
@@ -21,7 +20,7 @@ html, body, #map {
 .rectangle {
     bottom: 10px;
     left: 10px;
-    background: #003660;
+    background: white;
     border-radius: 5px;
     border: 0px solid;
     z-index: 1;
