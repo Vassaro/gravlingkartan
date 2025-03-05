@@ -12,11 +12,13 @@ tr {
 
 td {
   width: 50%;
+  font-family: "Open Sans";
 }
 
 th {
   width: 50%;
   text-align: left;
+  font-family: "Open Sans";
 }
 
 .centered {
@@ -34,6 +36,7 @@ th {
 body {
 	margin: 0;
 	padding: 0;
+  font-family: "Open Sans";
 }
 
 html,

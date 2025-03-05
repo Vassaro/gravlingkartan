@@ -44,7 +44,7 @@ sources.forEach(source => {
           if (feature.properties.skip !== true) { // || true) { // för att visa andra stigar
             eval("groups." + feature.properties.group).addLayer(layer);
           }
-          decorateLine(layer, feature.properties.type);
+          decorateLayer(layer, feature.properties.type);
         },
         pointToLayer: function (feature, latlng) {
           if (feature.properties.icon) {
@@ -59,7 +59,7 @@ sources.forEach(source => {
         },
 
         style: function (feature) { 
-          return styleLine(feature.properties.type); 
+          return styleLayer(feature.properties.type); 
         }
       });
     })

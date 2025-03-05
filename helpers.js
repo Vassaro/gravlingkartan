@@ -1,5 +1,5 @@
 // Helper functions to simplify other code
-function styleLine(type) {
+function styleLayer(type) {
   switch (type) {
 
     case "ditch_closed": {
@@ -23,7 +23,7 @@ function styleLine(type) {
 }
 
 
-function decorateLine(layer, type) {
+function decorateLayer(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
