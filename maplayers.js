@@ -43,8 +43,8 @@ sources.forEach(source => {
           }
           if (feature.properties.skip !== true) { // || true) { // för att visa andra stigar
             eval("groups." + feature.properties.group).addLayer(layer);
+            decorateLayer(layer, feature.properties.type);
           }
-          decorateLayer(layer, feature.properties.type);
         },
         pointToLayer: function (feature, latlng) {
           if (feature.properties.icon) {
