@@ -1,30 +1,109 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-html, body, #map {
-    height: 100%;
-    width: 100vw;
-    z-index: 0;
-}
-.hollyrosa {
-    bottom: 10px;
-    left: 10px;
-    background: white;
-    border-radius: 5px;
-    border: 1px solid;
-    z-index: 1;
-    padding: 10px;
-    position: absolute;
+#vassaroLogo {
+  width: 7rem;
 }
 
-/* Changes the groupcontrollayer button icon */
-.leaflet-control-layers-toggle {
-	background-image: url(icons/filter.svg);
-    z-index: 1000;
+.inline-icon {
+  height: 13pt;
 }
-.leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(icons/filter.svg);
-	background-size: 48px 48px;
-    z-index: 1000;
-	}
+
+.legendImage {
+  width: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  width: 100%;
+}
+
+td {
+  width: 50%;
+  font-family: "Open Sans";
+  border-bottom: 2px solid lightgrey;
+  align-items: center;
+}
+
+th {
+  width: 50%;
+  text-align: left;
+  font-family: "Open Sans";
+  border-bottom: 3px solid grey;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+  font-family: "Open Sans";
+}
+
+html,
+body,
+#map {
+	height: 100%;
+	width: 100vw;
+	z-index: 0;
+}
+
+.leaflet-touch .leaflet-bar a {
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+	font: bold 35px 'Lucida Console', Monaco, monospace;
+	text-indent: 0px;
+	border: none
+}
+
+.leaflet-touch .leaflet-control-zoom-in,
+.leaflet-touch .leaflet-control-zoom-out {
+	font-size: 40px;
+	margin: 0px;
+	margin-inline: 2.5px;
+	padding-bottom: 5px;
+	border: none
+}
+
+.leaflet-layerstree-header-name {
+    font-size: 12pt;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.leaflet-layerstree-header {
+	width: auto;
+	display: block;
+}
+
+.leaflet-layerstree-children {
+	padding-left: 30px;
+}
+
+.leaflet-touch .leaflet-bar {
+	border: none;
+}
+
+.leaflet-control-locate a .leaflet-control-locate-location-arrow {
+	/* display: inline-block; */
+	padding: 0px;
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+	text-indent: 0px;
+}
