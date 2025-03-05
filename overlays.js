@@ -1,5 +1,5 @@
 var overlaysTree = {
-  label: "Kartfilter",
+  label: "Visa / dölj allt",
   selectAllCheckbox: 'Un/select all',
   children: [
     {
