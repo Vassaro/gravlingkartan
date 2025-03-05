@@ -2,6 +2,23 @@
   width: 7rem;
 }
 
+.legendImage {
+  width: 2rem;
+}
+
+tr {
+  width: 100%;
+}
+
+td {
+  width: 50%;
+}
+
+th {
+  width: 50%;
+  text-align: left;
+}
+
 .centered {
   display: flex;
   justify-content: center;
