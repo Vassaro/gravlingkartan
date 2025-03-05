@@ -43,11 +43,11 @@ th {
 }
 
 .sidebar-tabs > li.active, .sidebar-tabs > ul > li.active {
-  background-color: var(--accent-color); 
+  background-color: var(--accent-color) !important; 
 }
 
 .sidebar-header {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color) !important;
 }
 
 body {
