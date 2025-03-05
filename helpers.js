@@ -27,12 +27,12 @@ function decorateLayer(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
-      layer.setText(' ► '.toUpperCase(), { repeat: true, attributes: { bold: true, fill: "#0099ff" }});
+      layer.setText(' > ', { repeat: true, attributes: { bold: true, fill: "#0099ff" }});
       break;
     }
 
     case "ditch_open": {
-      layer.setText(' ► ', { repeat: true, attributes: { bold: true, fill: "#0099ff"}});
+      layer.setText(' > ', { centered: true, repeat: true, attributes: { bold: true, fill: "#0099ff"}});
       break;
     }
   }
