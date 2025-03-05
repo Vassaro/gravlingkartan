@@ -1,3 +1,10 @@
+:root {
+  --accent-color: #5f8789;
+  --text-color: #666666;
+  --std-font: "Open Sans";
+  --manifold-color: #e1e1e1;
+}
+
 #vassaroLogo {
   width: 7rem;
 }
@@ -23,38 +30,34 @@ tr {
 
 td {
   width: 50%;
-  font-family: "Open Sans";
-  color: #666666;
-  border-top: 1px solid #e1e1e1;
+  font-family: var(--std-font);
+  color: var(--text-color);
+  border-top: 1px solid var(--manifold-color);
   vertical-align: middle;
 }
 
 th {
   width: 50%;
   text-align: left;
-  font-family: "Open Sans";
+  font-family: var(--std-font);
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sidebar-tabs > li.active, .sidebar-tabs > ul > li.active {
+  background-color: var(--accent-color); 
 }
 
-.centered-left {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+.sidebar-header {
+  background-color: var(--accent-color);
 }
 
 body {
 	margin: 0;
 	padding: 0;
-  font-family: "Open Sans";
+  font-family: var(--std-font);
 }
 
 p {
-  color: #666666;
+  color: var(--text-color);
 }
 
 html,
