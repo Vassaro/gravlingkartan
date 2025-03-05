@@ -174,7 +174,7 @@
           for (let key in MapLayers.Basemaps) {
             eval("MapLayers.Basemaps." + key).remove();
           };
-          eval("MapLayers.Basemaps." + key).addTo(lfmap);
+          eval("MapLayers.Basemaps." + item).addTo(lfmap);
         });
       });
     }
