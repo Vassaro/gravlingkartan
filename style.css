@@ -8,10 +8,13 @@
 
 .legendImage {
   width: 2rem;
+  margin: 0.2rem;
+  display: block;
 }
 
 table {
   border-collapse: collapse;
+  margin-top: 1rem;
 }
 
 tr {
@@ -21,15 +24,15 @@ tr {
 td {
   width: 50%;
   font-family: "Open Sans";
-  border-bottom: 2px solid lightgrey;
-  align-items: center;
+  color: #666666;
+  border-top: 1px solid #e1e1e1;
+  vertical-align: middle;
 }
 
 th {
   width: 50%;
   text-align: left;
   font-family: "Open Sans";
-  border-bottom: 3px solid grey;
 }
 
 .centered {
@@ -50,12 +53,21 @@ body {
   font-family: "Open Sans";
 }
 
+p {
+  color: #666666;
+}
+
 html,
 body,
 #map {
 	height: 100%;
 	width: 100vw;
 	z-index: 0;
+}
+
+.leaflet-control-layers {
+  border: none !important;
+  background: none !important;
 }
 
 .leaflet-touch .leaflet-bar a {

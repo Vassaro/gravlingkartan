@@ -61,7 +61,7 @@
           background-color: #eee; }
         .sidebar-tabs > li.active, .sidebar-tabs > ul > li.active {
           color: #fff;
-          background-color: #000080; }
+          background-color: #5f8789; }
         .sidebar-tabs > li.disabled, .sidebar-tabs > ul > li.disabled {
           color: rgba(51, 51, 51, 0.4); }
           .sidebar-tabs > li.disabled:hover, .sidebar-tabs > ul > li.disabled:hover {
@@ -119,8 +119,9 @@
     padding: 0 20px;
     line-height: 40px;
     font-size: 14.4pt;
+    font-weight: bolder;
     color: #fff;
-    background-color: #000080; }
+    background-color: #5f8789; }
     .sidebar-right .sidebar-header {
       padding-left: 40px; }
   
