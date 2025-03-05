@@ -2,8 +2,16 @@
   width: 7rem;
 }
 
+.inline-icon {
+  height: 13pt;
+}
+
 .legendImage {
   width: 2rem;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 tr {
@@ -13,12 +21,15 @@ tr {
 td {
   width: 50%;
   font-family: "Open Sans";
+  border-bottom: 2px solid lightgrey;
+  align-items: center;
 }
 
 th {
   width: 50%;
   text-align: left;
   font-family: "Open Sans";
+  border-bottom: 3px solid grey;
 }
 
 .centered {
