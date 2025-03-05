@@ -68,6 +68,7 @@ body,
 .leaflet-control-layers {
   border: none !important;
   background: none !important;
+  width: 100% !important;
 }
 
 .leaflet-touch .leaflet-bar a {
