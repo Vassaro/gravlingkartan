@@ -21,8 +21,8 @@ var sidebar = L.control.sidebar('sidebar').addTo(lfmap);
 
 var fullscreen = L.control.fullscreen({
   title: {
-    "true": "Fullskärmsläge",
-    "false": "Återgå till normalläge"
+    "true": "Återgå till normalläge",
+    "false": "Fullskärmsläge"
   }
 }).addTo(lfmap);
 
