@@ -72,17 +72,6 @@ var overlaysTree = {
         { label: "Norra Ängarna", layer: groups.norra }
 
     ]},
-        {
-            label: "Annat",
-            selectAllCheckbox: false,
-            collapsed: false,
-            children: [
-		            { label: "Dass", layer: groups.toilets },
-		            { label: "Soprum", layer: groups.trashrooms },
-
-            ]
-            // "Lokaler": groups.bookablerooms,
-            // "Områden": groups.areas,
-        }
+        { label: "Pågående Projekt", layer: groups.ongoing }
     ]
 }
