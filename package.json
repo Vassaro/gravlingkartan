@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "leaflet-polylinedecorator": "^1.6.0",
-    "leaflet-sidebar": "^0.2.4",
-    "leaflet-textpath": "^1.2.3"
-  }
-}
