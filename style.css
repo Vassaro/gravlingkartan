@@ -70,6 +70,7 @@ body {
 
 p {
   color: var(--text-color);
+  font-size: 12pt !important;
 }
 
 html,
