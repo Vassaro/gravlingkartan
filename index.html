@@ -39,92 +39,94 @@
 <body>
 
 
-    <div id="map">
-        <div id="sidebar" class="sidebar collapsed">
-            <!-- Definiera flikar -->
-            <div class="sidebar-tabs">
-                <ul role="tablist">
-                    <li><a href="#menu" role="tab"><i class="fa fa-solid fa-bars"></i></a></li>
-                    <li><a href="#filter" id="filter" role="tab"><img src="icons/filter.svg" width="40px"></a></li>
-                    <li><a href="#legend" role="tab"><i class="fa fa-solid fa-question"></i></a></li>
-                    <li><a href="#qr" role="tab"><i class="fa fa-solid fa-sharp fa-qrcode"></i></a></li>
-                    <!-- <li><a href="https://github.com/danielmartling/trappermapper/" role="tab" target="_blank"><i -->
-                    <!-- class="fa fa-github"></i></a></li> -->
-                    </li>
-                </ul>
-                <ul role="tablist">
-                    <div id="button-box"></div>
-                </ul>
-            </div>
+  <div id="map">
+    <div id="sidebar" class="sidebar collapsed">
+      <!-- Definiera flikar -->
+      <div class="sidebar-tabs">
+        <ul role="tablist">
+          <li><a href="#menu" role="tab"><i class="fa fa-solid fa-bars"></i></a></li>
+          <li><a href="#filter" id="filter" role="tab"><img src="icons/filter.svg" width="40px"></a></li>
+          <li><a href="#legend" role="tab"><i class="fa fa-solid fa-question"></i></a></li>
+          <li><a href="#qr" role="tab"><i class="fa fa-solid fa-sharp fa-qrcode"></i></a></li>
+          <!-- <li><a href="https://github.com/danielmartling/trappermapper/" role="tab" target="_blank"><i -->
+          <!-- class="fa fa-github"></i></a></li> -->
+          </li>
+        </ul>
+        <ul role="tablist">
+          <div id="button-box"></div>
+        </ul>
+      </div>
 
-            <!-- Flikpaneler och innehåll -->
-            <div class="sidebar-content">
-                <div class="sidebar-pane" id="menu">
-                    <h1 class="sidebar-header">
-                        GRÄVLINGKARTAN 
-                        <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
-                    </h1>
-                    <p>Det här är en karta framtagen av Joakim "Jocke" Hertzberg, för bruk i Vässarös verksamhet. Den är baserad på projektet 
-                    <a href="https://github.com/danielmartling/trappermapper/"><i class="fa fa-github"></i>Trappermapper</a>.</p>
-                    <p>Under filtret (<img src="./icons/filter.svg" class="inline-icon">) till vänster kan du välja vad du vill se på kartan. <br>Du kan också klicka på frågetecknet (<i class="fa fa-solid fa-question"></i>) för en teckenförklaring.</p>
-                    <p>Använd inte kartan som ett navigationsverktyg på vattnet.</p>
-                    <div class="centered">
-                        <img src="./img/vassaro_logga.png" id="vassaroLogo">
-                    </div>
-                </div>
-
-
-                <div class="sidebar-pane" id="filter">
-                    <h1 class="sidebar-header">
-                        KARTFILTER 
-                        <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
-                    </h1>
-                    <div>
-                        <h2>KARTBAKGRUNDER</h2>
-                        <input type="radio" id="osmradio" name="selectBackground" value="OpenStreetMap" checked>
-                        <label for="osmradio" id="osmradioLabel">OpenStreetMap</label><br>
-                        <input type="radio" id="satradio" name="selectBackground" value="Satellit">
-                        <label for="satradio" id="satradioLabel">Satellit</label>    
-                    </div>
-                    <div>
-                        <h2>KARTFILTER</h2>
-                        <div id="filter-box" style="padding-top: 0px;"></div>
-                    </div>
-                </div>
-
-
-                <div class="sidebar-pane" id="legend">
-                    <h1 class="sidebar-header">
-                        TECKENFÖRKLARING 
-                        <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
-                    </h1>
-                    <div style="width: 100%">
-                        <table>
-                            <tr>
-                                <th style="width:50%"> TECKEN </th> <th style="width: 50%"> BETYDELSE </th>
-                            </tr>
-                            <tr>
-                                <td><img src="icons/legend/ditch_open.png" class="legendImage"></td><td>Dike</td>
-                            </tr>
-                            <tr>
-                                <td><img src="icons/legend/ditch_closed.png" class="legendImage"></td><td>Vägtrumma / Täckdike</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-           
-                <div class="sidebar-pane" id="qr">
-                    <h1 class="sidebar-header">
-                        QR-KOD
-                        <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
-                    </h1>
-                    <p>Du hittar enklast tillbaka till den här kartan genom att spara länken eller skanna QR-koden med din mobilkamera:<br><br>
-                        <img src="img/qr/qr-gravlingkartan.png" alt="QR-kod som leder till den här kartan!" width="100%"><br>
-                    </p>
-                </div>
-            </div>
+      <!-- Flikpaneler och innehåll -->
+      <div class="sidebar-content">
+        <div class="sidebar-pane" id="menu">
+          <h1 class="sidebar-header">
+            GRÄVLINGKARTAN 
+            <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+          </h1>
+          <p>Det här är en karta framtagen av Joakim "Jocke" Hertzberg, för bruk i Vässarös verksamhet. Den är baserad på projektet 
+            <a href="https://github.com/danielmartling/trappermapper/"><i class="fa fa-github"></i>Trappermapper</a>.</p>
+          <p>Under filtret (<img src="./icons/filter.svg" class="inline-icon">) till vänster kan du välja vad du vill se på kartan. <br>Du kan också klicka på frågetecknet (<i class="fa fa-solid fa-question"></i>) för en teckenförklaring.</p>
+          <p>Använd inte kartan som ett navigationsverktyg på vattnet.</p>
+          <div class="centered">
+            <img src="./img/vassaro_logga.png" id="vassaroLogo">
+          </div>
         </div>
+
+
+        <div class="sidebar-pane" id="filter">
+          <h1 class="sidebar-header">
+            KARTFILTER 
+            <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+          </h1>
+          <div>
+            <h2>KARTBAKGRUNDER</h2>
+            <input type="radio" id="osmradio" name="selectBackground" value="OpenStreetMap" checked>
+            <label for="osmradio" id="osmradioLabel">OpenStreetMap</label><br>
+            <input type="radio" id="satradio" name="selectBackground" value="Satellit">
+            <label for="satradio" id="satradioLabel">Satellit</label>    
+          </div>
+          <div>
+            <h2>KARTFILTER</h2>
+            <div id="filter-box" style="padding-top: 0px;"></div>
+          </div>
+        </div>
+
+        <div class="sidebar-pane" id="legend">
+          <h1 class="sidebar-header">
+            TECKENFÖRKLARING 
+            <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+          </h1>
+          <div style="width: 100%">
+            <table>
+              <tr>
+                <th style="width:50%"> TECKEN </th> <th style="width: 50%"> BETYDELSE </th>
+              </tr>
+              <tr>
+                <td><img src="icons/legend/ditch_open.png" class="legendImage"></td><td>Dike</td>
+              </tr>
+              <tr>
+                <td><img src="icons/legend/ditch_closed.png" class="legendImage"></td><td>Vägtrumma / Täckdike</td>
+              </tr>
+              <tr>
+                <td><img src="icons/legend/ditch_ongoing.png" class="legendImage"></td><td>Pågående Dike</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+           
+        <div class="sidebar-pane" id="qr">
+          <h1 class="sidebar-header">
+            QR-KOD
+            <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+          </h1>
+          <p>Du hittar enklast tillbaka till den här kartan genom att spara länken eller skanna QR-koden med din mobilkamera:<br><br>
+            <img src="img/qr/qr-gravlingkartan.png" alt="QR-kod som leder till den här kartan!" width="100%"><br>
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
 
 
   <script src="./src/L.Sidebar/L.Sidebar.js"></script>
