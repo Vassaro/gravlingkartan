@@ -9,6 +9,11 @@
   width: 7rem;
 }
 
+.leaflet-container {
+  font-family: var(--std-font) !important;
+  font-size: 12pt !important;
+}
+
 .inline-icon {
   height: 13pt;
 }
