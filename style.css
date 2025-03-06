@@ -42,6 +42,12 @@ th {
   font-family: var(--std-font);
 }
 
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sidebar-tabs > li.active, .sidebar-tabs > ul > li.active {
   background-color: var(--accent-color) !important; 
 }
@@ -54,6 +60,7 @@ body {
 	margin: 0;
 	padding: 0;
   font-family: var(--std-font);
+  font-size: 12pt;
 }
 
 p {
@@ -75,14 +82,14 @@ body,
 }
 
 .leaflet-touch .leaflet-bar a {
-	width: 36px;
-	height: 36px;
-	line-height: 36px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
 }
 
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
-	font: bold 35px 'Lucida Console', Monaco, monospace;
+	font: bold 40px 'Lucida Console', Monaco, monospace;
 	text-indent: 0px;
 	border: none
 }
@@ -91,8 +98,6 @@ body,
 .leaflet-touch .leaflet-control-zoom-out {
 	font-size: 40px;
 	margin: 0px;
-	margin-inline: 2.5px;
-	padding-bottom: 5px;
 	border: none
 }
 
@@ -117,9 +122,8 @@ body,
 
 .leaflet-control-locate a .leaflet-control-locate-location-arrow {
 	/* display: inline-block; */
-	padding: 0px;
-	width: 20px;
-	height: 20px;
-	margin: 10px;
+  margin: 10px !important;
+	width: 20px !important;
+	height: 20px !important;
 	text-indent: 0px;
 }
