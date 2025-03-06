@@ -4,6 +4,7 @@ var lfmap = L.map('map', {
   zoom: 16,
   minZoom: 12,
   layers: [window.MapLayers.Basemaps.OpenStreetMap],
+  zoomControl: false,
 });
 
 // Define the map's edges (a bit outside VÖ, Garpen, Bodskären)-->
