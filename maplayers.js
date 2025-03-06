@@ -27,8 +27,7 @@ var sources = [
   "data/ditches/fields/centralangarna.geojson",
   "data/ditches/fields/ostra.geojson",
   "data/ditches/fields/norra.geojson",
-  "data/toilets.geojson",
-  "data/trashrooms.geojson",
+  "data/ongoing.geojson",
 ];
 
 // Fetch GeoJSON-objects from each file

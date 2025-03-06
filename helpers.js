@@ -19,6 +19,15 @@ function styleLayer(type) {
       };
       break;
     }
+    case "ditch_ongoing": {
+      return {
+        dashArray: "2, 10",
+        color: "#cc0000",
+        weight: 5,
+        opacity: 0 
+      };
+      break;
+    }
   }
 }
 
@@ -27,12 +36,17 @@ function decorateLayer(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
-      layer.setText(' ► ', { repeat: true, attributes: { bold: true, fill: "#0099ff" }});
+      layer.setText(" ► ", { repeat: true, attributes: { fill: "#0099ff" }});
       break;
     }
 
     case "ditch_open": {
-      layer.setText(' ► ', { centered: true, repeat: true, attributes: { bold: true, fill: "#0099ff"}});
+      layer.setText(" ► ", { repeat: true, attributes: { fill: "#0099ff" }});
+      break;
+    }
+
+    case "ditch_ongoing": {
+      layer.setText(" ► ", { repeat: true, attributes: { fill: "#cc0000" }});
       break;
     }
   }

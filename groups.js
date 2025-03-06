@@ -45,9 +45,6 @@ var groups = {
   // Norra Ängarna
   norra: new L.LayerGroup(),
 
-
-
   // OTHERS
-  toilets: new L.LayerGroup(),
-  trashrooms: new L.LayerGroup(),
+  ongoing: new L.LayerGroup(),
 };
