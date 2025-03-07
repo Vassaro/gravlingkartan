@@ -53,7 +53,6 @@ objects.forEach(element => {
 });
 setParent(layerControl, filterbox);
 
-
 // Switch Basemaps
 if (document.querySelector('input[name="selectBackground"]')) {
   document.querySelectorAll('input[name="selectBackground"]').forEach((elem) => {

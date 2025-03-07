@@ -5,6 +5,10 @@
   --manifold-color: #e1e1e1;
 }
 
+text {
+  visibility: visible;
+}
+
 #vassaroLogo {
   width: 7rem;
 }
