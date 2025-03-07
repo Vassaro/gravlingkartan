@@ -5,10 +5,14 @@
 This is an interactive map over the infrastructure of the Vässarö Scout Centre, based on the project "trappermapper" at [https://github.com/danielmartling/trappermapper/](https://github.com/danielmartling/trappermapper). It has been modified to fit the needs of patrol Grävlingen by Joakim "Jocke" Hertzberg, but it may be used for other purposes as well. It uses Leaflet.JS to run the map, with GeoJSON data.
 
 ## Table of contents
-[installation](#installation)
-[usage](#usage)
-[pipeline](#pipeline)
-[contributing](#contributing)
+- [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Pipeline](#pipeline)
+- [Contributing](#contributing)
+
+## License
+This project is licensed under the [GNU Public License 3.0 (GPL-3,0)](LICENSE)
 
 ## Installation
 To install this project locally, just install the source files. There is nothing which needs installation by package manager here.
