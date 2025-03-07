@@ -33,6 +33,7 @@ function styleLayer(type) {
 
 
 function decorateLayer(layer, type) {
+  console.log("DECORATED");
   switch (type) {
 
     case "ditch_closed": {
