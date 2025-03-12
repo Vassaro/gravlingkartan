@@ -31,3 +31,8 @@ The purpose of all these features is to prevent damage being caused to infrastru
 
 ## Contributing
 You are welcome to contribute! Just contact me according to the credentials on my profile, and we can arrange something. 
+
+## This project was brain-made
+To see what that means, visit (https://brainmade.org/)[https://brainmade.org/]
+![Brainmade image](./img/brainmade.png)
+
