@@ -97,14 +97,16 @@ body,
 .leaflet-control-zoom-out {
 	font: bold 40px 'Lucida Console', Monaco, monospace;
 	text-indent: 0px;
-	border: none
+	border: none;
+  color: #000000;
 }
 
 .leaflet-touch .leaflet-control-zoom-in,
 .leaflet-touch .leaflet-control-zoom-out {
 	font-size: 40px;
 	margin: 0px;
-	border: none
+	border: none;
+  color: #000000;
 }
 
 .leaflet-layerstree-header-name {
