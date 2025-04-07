@@ -27,6 +27,7 @@ var sources = [
   "data/ditches/fields/centralangarna.geojson",
   "data/ditches/fields/ostra.geojson",
   "data/ditches/fields/norra.geojson",
+  "data/ditches/roads.geojson",
   "data/ongoing.geojson",
 ];
 

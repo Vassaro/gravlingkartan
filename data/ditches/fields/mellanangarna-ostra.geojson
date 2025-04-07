@@ -7,7 +7,7 @@
         "title": "A1",
         "desc": "DIKE <br>Längd: 146.5m",
         "type": "ditch_open",
-        "group": "mea"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -46,7 +46,7 @@
         "title": "a2",
         "desc": "VÄGTRUMMA <br>Längd: 0.9m",
         "type": "ditch_closed",
-        "group": "mea"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -69,7 +69,7 @@
         "title": "A3",
         "desc": "DIKE <br>Längd: 40.8m",
         "type": "ditch_open",
-        "group": "mea"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -100,7 +100,7 @@
         "title": "a4",
         "desc": "VÄGTRUMMA <br>Längd: 0.7m",
         "type": "ditch_closed",
-        "group": "mea"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -123,7 +123,7 @@
         "title": "A5",
         "desc": "DIKE <br>Längd: 189.9m",
         "type": "ditch_open",
-        "group": "mea"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -182,7 +182,7 @@
         "title": "B",
         "desc": "DIKE <br>Längd: 23.5m",
         "type": "ditch_open",
-        "group": "meb"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -205,7 +205,7 @@
         "title": "C",
         "desc": "DIKE <br>Längd: 30.9m",
         "type": "ditch_open",
-        "group": "mec"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -233,7 +233,7 @@
         "title": "D",
         "desc": "DIKE <br>Längd: 38.6m",
         "type": "ditch_open",
-        "group": "med"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [
@@ -260,7 +260,7 @@
         "title": "E",
         "desc": "DIKE <br>Längd: 11.6m",
         "type": "ditch_open",
-        "group": "mee"
+        "group": "mellanangarna_ostra"
       },
       "geometry": {
         "coordinates": [

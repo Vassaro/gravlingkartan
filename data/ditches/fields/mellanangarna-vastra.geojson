@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "title": "A1",
-        "group": "mva",
+        "group": "mellanangarna_vastra",
         "desc": "DIKE <br>Längd: 134.4m",
         "type": "ditch_open"
       },
@@ -56,7 +56,7 @@
       "type": "Feature",
       "properties": {
         "title": "a2",
-        "group": "mva",
+        "group": "mellanangarna_vastra",
         "desc": "VÄGTRUMMA <br>Längd: 23.3m",
         "type": "ditch_closed"
       },
@@ -79,7 +79,7 @@
       "type": "Feature",
       "properties": {
         "title": "A3",
-        "group": "mva",
+        "group": "mellanangarna_vastra",
         "desc": "DIKE <br>Längd: 33.6m",
         "type": "ditch_open"
       },
@@ -122,7 +122,7 @@
       "type": "Feature",
       "properties": {
         "title": "B1",
-        "group": "mvb",
+        "group": "mellanangarna_vastra",
         "desc": "DIKE <br>Längd: 94.6m",
         "type": "ditch_open"
       },
@@ -161,7 +161,7 @@
       "type": "Feature",
       "properties": {
         "title": "B2",
-        "group": "mvb",
+        "group": "mellanangarna_vastra",
         "desc": "DIKE <br>Längd: 99.3m",
         "type": "ditch_open"
       },
@@ -212,7 +212,7 @@
       "type": "Feature",
       "properties": {
         "title": "C1",
-        "group": "mvc",
+        "group": "mellanangarna_vastra",
         "desc": "DIKE <br>Längd: 80.1m",
         "type": "ditch_open"
       },
@@ -255,7 +255,7 @@
       "type": "Feature",
       "properties": {
         "title": "c2",
-        "group": "mvc",
+        "group": "mellanangarna_vastra",
         "desc": "VÄGTRUMMA <br>Längd: 7.2m",
         "type": "ditch_closed"
       },
@@ -278,7 +278,7 @@
       "type": "Feature",
       "properties": {
         "title": "D",
-        "group": "mvd",
+        "group": "mellanangarna_vastra",
         "desc": "DIKE <br>Längd: 35.7m",
         "type": "ditch_closed"
       },
@@ -301,7 +301,7 @@
       "type": "Feature",
       "properties": {
         "title": "e",
-        "group": "mve",
+        "group": "mellanangarna_vastra",
         "desc": "TÄCKDIKE <br>Längd: 44.2m",
         "type": "ditch_closed"
       },
@@ -336,7 +336,7 @@
       "type": "Feature",
       "properties": {
         "title": "f",
-        "group": "mvf",
+        "group": "mellanangarna_vastra",
         "desc": "TÄCKDIKE <br>Längd: 61.3m",
         "type": "ditch_closed"
       },
@@ -365,7 +365,7 @@
         "title": "G",
         "desc": "Längd: 36.8m",
         "type": "ditch_open",
-        "group": "mvg"
+        "group": "mellanangarna_vastra"
       },
       "geometry": {
         "coordinates": [
