@@ -6,7 +6,7 @@
         "properties": {
           "title": "A1",
           "desc": "DIKE <br>Längd: 119.5m",
-          "group": "oa",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -37,7 +37,7 @@
         "properties": {
           "title": "a2",
           "desc": "VÄGTRUMMA <br>Längd: 2m",
-          "group": "oa",
+          "group": "ostra",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -60,7 +60,7 @@
         "properties": {
           "title": "A3",
           "desc": "DIKE <br>Längd: 28.9m",
-          "group": "oa",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -91,7 +91,7 @@
         "properties": {
           "title": "a4",
           "desc": "VÄGTRUMMA <br>Längd: 5m",
-          "group": "oa",
+          "group": "ostra",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -114,7 +114,7 @@
         "properties": {
           "title": "A5",
           "desc": "DIKE <br>Längd: 51.9m",
-          "group": "oa",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -141,7 +141,7 @@
         "properties": {
           "title": "a6",
           "desc": "VÄGTRUMMA <br>Längd: 16.2m",
-          "group": "oa",
+          "group": "ostra",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -164,7 +164,7 @@
         "properties": {
           "title": "A7",
           "desc": "DIKE <br>Längd: 59.0m",
-          "group": "oa",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -207,7 +207,7 @@
         "properties": {
           "title": "b1",
           "desc": "VÄGTRUMMA <br>Längd: 5m",
-          "group": "ob",
+          "group": "ostra",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -230,7 +230,7 @@
         "properties": {
           "title": "B2",
           "desc": "DIKE <br>Längd: 27.9m",
-          "group": "ob",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -253,7 +253,7 @@
         "properties": {
           "title": "C1",
           "desc": "DIKE <br>Längd: 9.8m",
-          "group": "oc",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -276,7 +276,7 @@
         "properties": {
           "title": "C2",
           "desc": "DIKE <br>Längd: 41.0m",
-          "group": "oc",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -331,7 +331,7 @@
         "properties": {
           "title": "C3",
           "desc": "DIKE <br>Längd: 5.7m",
-          "group": "oc",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -354,7 +354,7 @@
         "properties": {
           "title": "C4",
           "desc": "DIKE <br>Längd: 13.9m",
-          "group": "oc",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -377,7 +377,7 @@
         "properties": {
           "title": "C5",
           "desc": "DIKE <br>Längd: 33.7m",
-          "group": "oc",
+          "group": "ostra",
           "type": "ditch_open"
         },
         "geometry": {
@@ -416,7 +416,7 @@
         "properties": {
           "title": "A1",
           "desc": "DIKE <br>Längd: 81.7m",
-          "group": "ooa",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -451,7 +451,7 @@
         "properties": {
           "title": "a2",
           "desc": "VÄGTRUMMA <br>Längd: 2m",
-          "group": "ooa",
+          "group": "overangen",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -474,7 +474,7 @@
         "properties": {
           "title": "A3",
           "desc": "DIKE <br>Längd: 22.8m",
-          "group": "ooa",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -501,7 +501,7 @@
         "properties": {
           "title": "A4",
           "desc": "DIKE <br>Längd: 62.2m",
-          "group": "ooa",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -528,7 +528,7 @@
         "properties": {
           "title": "B1",
           "desc": "DIKE <br>Längd: 35.0m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -567,7 +567,7 @@
         "properties": {
           "title": "B2",
           "desc": "DIKE <br>Längd: 21.7m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -598,7 +598,7 @@
         "properties": {
           "title": "B3",
           "desc": "DIKE <br>Längd: 50.9m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -629,7 +629,7 @@
         "properties": {
           "title": "B4",
           "desc": "DIKE <br>Längd: 19.4m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -652,7 +652,7 @@
         "properties": {
           "title": "B5",
           "desc": "DIKE <br>Längd: 24.3m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -687,7 +687,7 @@
         "properties": {
           "title": "b6",
           "desc": "VÄGTRUMMA <br>Längd: 2m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -710,7 +710,7 @@
         "properties": {
           "title": "B7",
           "desc": "DIKE <br>Längd: 11.0m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {
@@ -733,7 +733,7 @@
         "properties": {
           "title": "B8",
           "desc": "DIKE <br>Längd: 22.7m",
-          "group": "oob",
+          "group": "overangen",
           "type": "ditch_open"
         },
         "geometry": {

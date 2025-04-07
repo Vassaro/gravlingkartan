@@ -7,7 +7,7 @@
           "title": "a1",
           "desc": "VÄGTRUMMA <br>Längd: 49.0m",
           "type": "ditch_closed",
-          "group": "ca"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -30,7 +30,7 @@
           "title": "A2",
           "desc": "DIKE <br>Längd: 186.2m",
           "type": "ditch_open",
-          "group": "ca"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -81,7 +81,7 @@
           "title": "a3",
           "desc": "VÄGTRUMMA <br>Längd: 4.0m",
           "type": "ditch_closed",
-          "group": "ca"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -104,7 +104,7 @@
           "title": "A4",
           "desc": "DIKE <br>Längd: 79.3m",
           "type": "ditch_open",
-          "group": "ca"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -139,7 +139,7 @@
           "title": "a5",
           "desc": "VÄGTRUMMA <br>Längd: 6.4m",
           "type": "ditch_closed",
-          "group": "ca"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -162,7 +162,7 @@
           "title": "A6",
           "desc": "DIKE <br>Längd: 98.6m",
           "type": "ditch_open",
-          "group": "ca"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -225,7 +225,7 @@
           "title": "B1",
           "desc": "DIKE <br>Längd: 45.0m",
           "type": "ditch_open",
-          "group": "cb"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -248,7 +248,7 @@
           "title": "b2",
           "desc": "VÄGTRUMMA <br>Längd: 7.7m",
           "type": "ditch_closed",
-          "group": "cb"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -271,7 +271,7 @@
           "title": "B3",
           "desc": "DIKE <br>Längd: 28.4m",
           "type": "ditch_open",
-          "group": "cb"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -294,7 +294,7 @@
           "title": "C1",
           "desc": "DIKE <br>Längd: 8.8m",
           "type": "ditch_open",
-          "group": "cc"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -317,7 +317,7 @@
           "title": "c2",
           "desc": "VÄGTRUMMA <br>Längd: 7.9m",
           "type": "ditch_closed",
-          "group": "cc"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -340,7 +340,7 @@
           "title": "C3",
           "desc": "DIKE <br>Längd: 44.6m",
           "type": "ditch_open",
-          "group": "cc"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -391,7 +391,7 @@
           "title": "c4",
           "desc": "VÄGTRUMMA <br>Längd: 7.5m",
           "type": "ditch_closed",
-          "group": "cc"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -414,7 +414,7 @@
           "title": "C5",
           "desc": "DIKE <br>Längd: 20.3m",
           "type": "ditch_open",
-          "group": "cc"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -441,7 +441,7 @@
           "title": "D",
           "desc": "DIKE <br>Längd: 18.7m",
           "type": "ditch_open",
-          "group": "cd"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -464,7 +464,7 @@
           "title": "E1",
           "desc": "DIKE <br>Längd: 17.6m",
           "type": "ditch_open",
-          "group": "ce"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -487,7 +487,7 @@
           "title": "e2",
           "desc": "VÄGTRUMMA <br>Längd: 22m",
           "type": "ditch_closed",
-          "group": "ce"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -510,7 +510,7 @@
           "title": "E3",
           "desc": "DIKE <br>Längd: 44.1m",
           "type": "ditch_open",
-          "group": "ce"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -549,7 +549,7 @@
           "title": "F1",
           "desc": "DIKE <br>Längd: 60.6m",
           "type": "ditch_open",
-          "group": "cf"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -596,7 +596,7 @@
           "title": "f2",
           "desc": "VÄGTRUMMA <br>Längd: 2.9m",
           "type": "ditch_closed",
-          "group": "cf"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -619,7 +619,7 @@
           "title": "F3",
           "desc": "DIKE <br>Längd: 142m",
           "type": "ditch_open",
-          "group": "cf"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -694,7 +694,7 @@
           "title": "G1",
           "desc": "DIKE <br>Längd: 35.4m",
           "type": "ditch_open",
-          "group": "cg"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -721,7 +721,7 @@
           "title": "g2",
           "desc": "VÄGTRUMMA <br>Längd: 7.3m",
           "type": "ditch_closed",
-          "group": "cg"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -744,7 +744,7 @@
           "title": "G3",
           "desc": "DIKE <br>Längd: 26.4m",
           "type": "ditch_open",
-          "group": "cg"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -771,7 +771,7 @@
           "title": "h1",
           "desc": "TRUMMA <br>Längd: 5.5m",
           "type": "ditch_closed",
-          "group": "ch"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -794,7 +794,7 @@
           "title": "H2",
           "desc": "DIKE <br>Längd:  35.3m",
           "type": "ditch_open",
-          "group": "ch"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -833,7 +833,7 @@
           "title": "h3",
           "desc": "VÄGTRUMMA <br>Längd: 9.1m",
           "type": "ditch_closed",
-          "group": "ch"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -856,7 +856,7 @@
           "title": "H4",
           "desc": "DIKE <br>Längd: 32.1m",
           "type": "ditch_open",
-          "group": "ch"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -891,7 +891,7 @@
           "title": "I1",
           "desc": "DIKE <br>Längd: 4.4m",
           "type": "ditch_open",
-          "group": "ci"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -914,7 +914,7 @@
           "title": "I2",
           "desc": "DIKE <br>Längd: 8.7m",
           "type": "ditch_open",
-          "group": "ci"
+          "group": "centralangarna"
         },
         "geometry": {
           "coordinates": [
@@ -943,7 +943,7 @@
         "properties": {
           "title": "A1",
           "desc": "DIKE <br>Längd: 46.7m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_open"
         },
         "geometry": {
@@ -970,7 +970,7 @@
         "properties": {
           "title": "a2",
           "desc": "VÄGTRUMMA <br>Längd: 2.0m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -993,7 +993,7 @@
         "properties": {
           "title": "A3",
           "desc": "DIKE <br>Längd: 68.0m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_open"
         },
         "geometry": {
@@ -1024,7 +1024,7 @@
         "properties": {
           "title": "a4",
           "desc": "VÄGTRUMMA <br>Längd: 2.0m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -1047,7 +1047,7 @@
         "properties": {
           "title": "A5",
           "desc": "DIKE <br>Längd: 70.9m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_open"
         },
         "geometry": {
@@ -1090,7 +1090,7 @@
         "properties": {
           "title": "A6",
           "desc": "DIKE <br>Längd: 60.1m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_open"
         },
         "geometry": {
@@ -1141,7 +1141,7 @@
         "properties": {
           "title": "a7",
           "desc": "VÄGTRUMMA <br>Längd: 5.7m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_closed"
         },
         "geometry": {
@@ -1164,7 +1164,7 @@
         "properties": {
           "title": "A8",
           "desc": "DIKE <br>Längd: 62.4m",
-          "group": "sa",
+          "group": "skrak",
           "type": "ditch_open"
         },
         "geometry": {
@@ -1195,7 +1195,7 @@
         "properties": {
           "title": "B",
           "desc": "DIKE <br>Längd: 27.9m",
-          "group": "sb",
+          "group": "skrak",
           "type": "ditch_open"
         },
         "geometry": {

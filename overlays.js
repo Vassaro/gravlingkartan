@@ -14,64 +14,31 @@ var overlaysTree = {
 
         // Mellanängarna
         { label: 'Mellanängarna', selectAllCheckbox: true, collapsed: true, children: [
-
-          // Västra mellanängarna
-          { label: "Västra", selectAllCheckbox: true, collapsed: true, children: [
-            { label: "A", layer: groups.mva },
-            { label: "B", layer: groups.mvb },
-            { label: "C", layer: groups.mvc },
-            { label: "D", layer: groups.mvd },
-            { label: "e", layer: groups.mve },
-            { label: "f", layer: groups.mvf },
-            { label: "G", layer: groups.mvg },
-          ]},
-
-          // Östra mellanängarna
-          { label: "Östra", selectAllCheckbox: true, collapsed: true, children: [
-            { label: "A", layer: groups.mea },
-            { label: "B", layer: groups.meb },
-            { label: "C", layer: groups.mec },
-            { label: "D", layer: groups.med },
-            { label: "E", layer: groups.mee },
-          ]},
-
+          { label: "Västra", layer: groups.mellanangarna_vastra },
+          { label: "Östra", layer: groups.mellanangarna_ostra },
         ]},
 
 
         // CENTRAL 
         { label: "Centrala Ängarna", selectAllCheckbox: true, collapsed: true, children: [
-          { label: "A", layer: groups.ca },
-          { label: "B", layer: groups.cb },
-          { label: "C", layer: groups.cc },
-          { label: "D", layer: groups.cd },
-          { label: "E", layer: groups.ce },
-          { label: "F", layer: groups.cf },
-          { label: "G", layer: groups.cg },
-          { label: "H", layer: groups.ch },
-          { label: "I", layer: groups.ci },
-          // Skrak
-          { label: "Krondiket", selectAllCheckbox: true, collapsed: true, children: [
-            { label: "A", layer: groups.sa },
-            { label: "B", layer: groups.sb },
-          ]},
+          { label: "Krondiket", layer: groups.skrak },
+          { label: "Övriga Centrala Ängarna", layer: groups.centralangarna },
         ]},
 
 
         // ÖSTRA 
         { label: "Östra Ängarna", selectAllCheckbox: true, collapsed: true, children: [
-          { label: "A", layer: groups.oa },
-          { label: "B", layer: groups.ob },
-          { label: "C", layer: groups.oc },
-          // Överängen
-          { label: "Överängen", selectAllCheckbox: true, collapsed: true, children: [
-            { label: "A", layer: groups.ooa },
-            { label: "B", layer: groups.oob },
-          ]}
+          { label: "Överängen", layer: groups.overangen },
+          { label: "Övriga Östra Ängarna", layer: groups.ostra },
         ]},
 
-        { label: "Norra Ängarna", layer: groups.norra }
+        { label: "Norra Ängarna", layer: groups.norra },
 
-    ]},
+        { label: "Vägar", selectAllCheckbox: true, collapsed: true, children: [
+          { label: "E4:an", layer: groups.e4 },
+        ]},
+
+      ]},
         { label: "Pågående Projekt", layer: groups.ongoing }
     ]
 }
