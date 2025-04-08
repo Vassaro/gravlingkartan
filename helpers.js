@@ -32,6 +32,9 @@ function styleLayer(type) {
 }
 
 
+// OBS: For self.setText() to work, Leaflet TextPath has to be installed.
+
+// It would be nice if this could be implemented with LayerDecorator instead.
 function decorateLayer(layer, type) {
   switch (type) {
 
