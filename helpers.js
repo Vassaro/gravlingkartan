@@ -11,14 +11,16 @@ function styleLayer(type) {
       };
       break;
     }
+
     case "ditch_open": {
       return {
-        color: "#33ccff",
+        color: "#3388ff",
         weight: 5,
         opacity: 1
       };
       break;
     }
+
     case "ditch_ongoing": {
       return {
         dashArray: "2, 10",
@@ -31,26 +33,68 @@ function styleLayer(type) {
   }
 }
 
-
-// OBS: For self.setText() to work, Leaflet TextPath has to be installed.
-
-// It would be nice if this could be implemented with LayerDecorator instead.
-function decorateLayer(layer, type) {
+// This function defines objects containing options for polylineDecorator 
+function decoratorOptionsByType(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
-      layer.setText(" ► ", { repeat: true, attributes: { fill: "#0099ff" }});
+      return [
+        {
+          offset: 0, 
+          repeat: 20, 
+          symbol: L.Symbol.dash({ pixelSize: 10 })
+        },
+      
+        {
+          offset: 0,
+          repeat: 80,
+          symbol: L.Symbol.arrowHead({
+            pixelSize: 10,
+            polygon: false,
+            pathOptions: { color: "#3388ff" }
+          })
+        }
+      ];
       break;
     }
-
+    
     case "ditch_open": {
-      layer.setText(" ► ", { repeat: true, attributes: { fill: "#0099ff" }});
+      return [
+        {
+          offset: 0, 
+          repeat: 80, 
+          symbol: L.Symbol.arrowHead({ 
+            pixelSize: 10,
+            polygon: false,
+            pathOptions: { stroke: true, color: "#3388ff" }
+          })
+        }
+      ];
       break;
     }
 
     case "ditch_ongoing": {
-      layer.setText(" ► ", { repeat: true, attributes: { fill: "#cc0000" }});
+      return [
+        {
+          offset: 0, 
+          repeat: 20, 
+          symbol: L.Symbol.dash({ 
+            pixelSize: 10,
+            pathOptions: { color: "#cc0000"}
+          })
+        }
+      ];
       break;
     }
+
   }
+}
+
+// Constructs a decorator using a given polyline and
+function decorateLayer(layer, type, geometryType) {
+
+  if (geometryType == "LineString") {
+    return L.polylineDecorator(layer, { patterns: decoratorOptionsByType(layer, type) });
+  }
+
 }
