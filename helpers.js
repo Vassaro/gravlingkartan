@@ -34,7 +34,7 @@ function styleLayer(type) {
 }
 
 // This function defines objects containing options for polylineDecorator 
-function polylineDecoratorOptinons(layer, type) {
+function polylineDecoratorOptions(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
