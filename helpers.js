@@ -38,55 +38,60 @@ function polylineDecoratorOptinons(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
-      return [
-        {
-          offset: 0, 
-          repeat: 20, 
-          symbol: L.Symbol.dash({ pixelSize: 10 })
-        },
+      return {
+        patterns: [
+          {
+            offset: 0, 
+            repeat: 20, 
+            symbol: L.Symbol.dash({ pixelSize: 10 })
+          },
       
-        {
-          offset: 0,
-          repeat: 80,
-          symbol: L.Symbol.arrowHead({
-            pixelSize: 10,
-            polygon: false,
-            pathOptions: { color: "#3388ff" }
-          })
-        }
-      ];
+          {
+            offset: 0,
+            repeat: 80,
+            symbol: L.Symbol.arrowHead({
+              pixelSize: 10,
+              polygon: false,
+              pathOptions: { color: "#3388ff" }
+            })
+          }
+        ]
+      };
       break;
     }
     
     case "ditch_open": {
-      return [
-        {
-          offset: 0, 
-          repeat: 80, 
-          symbol: L.Symbol.arrowHead({ 
-            pixelSize: 10,
-            polygon: false,
-            pathOptions: { stroke: true, color: "#3388ff" }
-          })
-        }
-      ];
+      return {
+        patterns: [
+          {
+            offset: 0, 
+            repeat: 80, 
+            symbol: L.Symbol.arrowHead({ 
+              pixelSize: 10,
+              polygon: false,
+              pathOptions: { stroke: true, color: "#3388ff" }
+            })
+          }
+        ]
+      };
       break;
     }
 
     case "ditch_ongoing": {
-      return [
-        {
-          offset: 0, 
-          repeat: 20, 
-          symbol: L.Symbol.dash({ 
-            pixelSize: 10,
-            pathOptions: { color: "#cc0000"}
-          })
-        }
-      ];
+      return {
+        patterns: [
+          {
+            offset: 0, 
+            repeat: 20, 
+            symbol: L.Symbol.dash({ 
+              pixelSize: 10,
+              pathOptions: { color: "#cc0000"}
+            })
+          }
+        ]
+      };
       break;
     }
-
   }
 }
 
@@ -94,7 +99,7 @@ function polylineDecoratorOptinons(layer, type) {
 function decorateLayer(layer, type, geometryType) {
 
   if (geometryType == "LineString") {
-    return L.polylineDecorator(layer, { patterns: polylineDecoratorOptions(layer, type) });
+    return L.polylineDecorator(layer, polylineDecoratorOptions(layer, type));
   }
 
 }
