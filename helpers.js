@@ -34,7 +34,7 @@ function styleLayer(type) {
 }
 
 // This function defines objects containing options for polylineDecorator 
-function decoratorOptionsByType(layer, type) {
+function polylineDecoratorOptinons(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
@@ -94,7 +94,7 @@ function decoratorOptionsByType(layer, type) {
 function decorateLayer(layer, type, geometryType) {
 
   if (geometryType == "LineString") {
-    return L.polylineDecorator(layer, { patterns: decoratorOptionsByType(layer, type) });
+    return L.polylineDecorator(layer, { patterns: polylineDecoratorOptions(layer, type) });
   }
 
 }
