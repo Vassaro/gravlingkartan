@@ -61,7 +61,7 @@ function styleLayer(type) {
   * @param{L.layer} layer
   * @param{"ditch_open" | "ditch_closed" | "ditch_ongoing"} type
   * @returns {object} Options for polylineDecorator()
-*/
+  */
 function polylineDecoratorOptions(layer, type) {
   switch (type) {
 
