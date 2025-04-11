@@ -15,7 +15,7 @@ var allowedTypes = [
 
 
 /** Defines styles for layers
-  * @param {"ditch_open", "ditch_closed", "ditch_ongoing"} type 
+  * @param {"ditch_open" | "ditch_closed" | "ditch_ongoing"} type 
   * @returns {object} options 
 */
 function styleLayer(type) {
