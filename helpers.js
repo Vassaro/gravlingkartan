@@ -16,7 +16,7 @@ var allowedTypes = [
 
 /** Defines styles for layers
   * @param {"ditch_open", "ditch_closed", "ditch_ongoing"} type 
-  * @returns {OBJECT} options 
+  * @returns {object} options 
 */
 function styleLayer(type) {
   var options = {};
@@ -60,9 +60,9 @@ function styleLayer(type) {
   *
   * @param{L.layer} layer
   * @param{"ditch_open" | "ditch_closed" | "ditch_ongoing"} type
-  * @returns Options for polylineDecorator()
+  * @returns {object} Options for polylineDecorator()
 */
-function decoratorOptionsByType(layer, type) {
+function polylineDecoratorOptions(layer, type) {
   switch (type) {
 
     case "ditch_closed": {
@@ -124,27 +124,26 @@ function decoratorOptionsByType(layer, type) {
 }
 
 
-/** Constructs a decorator object for a given polyline 
+/** Returns a decorator given a layer, if the geometry and type is valid
   *
   * @param {L.layer} layer
-  * @param {"ditch_open" | "ditch_closed" | "ditch_ongoing"} type
-  * @param {"Point", "LineString", "Polygon"} geometryType the feature.geometry.type in GeoJSON 
-  * @returns L.polyline object 
-  * */
+  * @param {"ditch_open" | "ditch_closed" | "ditch_ongoing"} type - the feature type 
+  * @param {"Point", "LineString", "Polygon"} geometryType - the GeoJSON geometry type 
+  * @returns {L.polyline | undefined}
+  */
 function decorateLayer(layer, type, geometryType) {
 
-  if !(allowedGeometryTypes.includes(geometryType)) {
-    throw("The GeoJSON geometry type", geometryType, "is not allowed for this function!");
+  if (!allowedGeometryTypes.includes(geometryType)) {
+    throw new Error("The GeoJSON geometry type", geometryType, "is not allowed for this function!");
     return;
   }
 
-  if !(allowedTypes.includes(type)) {
-    throw(type, "is not a valid feature type!");
+  if (!allowedTypes.includes(type)) {
+    throw new Error(type, "is not a valid feature type!");
     return;
   }
 
-  if (geometryType == "LineString") {
+  if (geometryType === "LineString") {
     return L.polylineDecorator(layer, polylineDecoratorOptions(layer, type));
   }
-
 }

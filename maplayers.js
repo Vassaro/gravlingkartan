@@ -42,8 +42,10 @@ sources.forEach(source => {
             layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.desc);
           }
           if (feature.properties.skip !== true) { // || true) { // för att visa andra stigar
-            eval("groups." + feature.properties.group).addLayer(layer);
-            eval("groups." + feature.properties.group).addLayer(decorateLayer(layer, feature.properties.type, feature.geometry.type));
+            const group = groups[feature.properties.group];
+            group.addLayer(layer);
+            var decorator = decorateLayer(layer, feature.properties.type, feature.geometry.type);
+            if (decorator) group.addLayer(decorator);
           }
         },
         pointToLayer: function (feature, latlng) {
