@@ -8,12 +8,12 @@ var lfmap = L.map('map', {
 });
 
 // Define the map's edges (a bit outside VÖ, Garpen, Bodskären)-->
-var southWest = L.latLng(60.0, 18.5);
-var northEast = L.latLng(60.4, 19.0);
-var bounds = L.latLngBounds(southWest, northEast);
-lfmap.setMaxBounds(bounds);
+const SOUTH_WEST = L.latLng(60.0, 18.5);
+const NORTH_EAST = L.latLng(60.4, 19.0);
+const BOUNDS = L.latLngBounds(SOUTH_WEST, NORTH_EAST);
+lfmap.setMaxBounds(BOUNDS);
 lfmap.on('drag', function () {
-  lfmap.panInsideBounds(bounds, { animate: false });
+  lfmap.panInsideBounds(BOUNDS, { animate: false });
 });
 
 var layerControl = L.control.layers.tree(null, window.MapLayers.OverlaysTree, window.MapLayers.Options).addTo(lfmap);
@@ -59,9 +59,9 @@ if (document.querySelector('input[name="selectBackground"]')) {
     elem.addEventListener("change", function (event) {
       var item = event.target.value;
       for (let key in MapLayers.Basemaps) {
-        eval("MapLayers.Basemaps." + key).remove();
+        MapLayers.Basemaps[key].remove();
       };
-      eval("MapLayers.Basemaps." + item).addTo(lfmap);
+      MapLayers.Basemaps[item].addTo(lfmap);
     });
   });
 }

@@ -51,7 +51,7 @@ sources.forEach(source => {
         pointToLayer: function (feature, latlng) {
           if (feature.properties.icon) {
             thisMarker = L.marker(latlng, {
-              icon: eval("icons." + feature.properties.icon),
+              icon: icons[feature.properties.icon],
             });
           } else {
             thisMarker = L.marker(latlng, {
@@ -59,7 +59,6 @@ sources.forEach(source => {
           }
           return thisMarker;
         },
-
         style: function (feature) { 
           return styleLayer(feature.properties.type); 
         }

@@ -1,13 +1,13 @@
 // Helper functions to simplify other code
 
 // Defines allowed types for later error checking
-var allowedGeometryTypes = [
+const ALLOWED_GEOMETRY_TYPES = [
   "Point", 
   "LineString", 
   "Polygon"
 ];
 
-var allowedTypes = [
+const ALLOWED_FEATURE_TYPES = [
   "ditch_closed", 
   "ditch_open", 
   "ditch_ongoing"
@@ -131,19 +131,19 @@ function polylineDecoratorOptions(layer, type) {
   * @param {"Point", "LineString", "Polygon"} geometryType - the GeoJSON geometry type 
   * @returns {L.polyline | undefined}
   */
-function decorateLayer(layer, type, geometryType) {
-
-  if (!allowedGeometryTypes.includes(geometryType)) {
+function decorateLayer(layer, featureType, geometryType) {
+  // Check that the geometry type is allowed 
+  if (!ALLOWED_GEOMETRY_TYPES.includes(geometryType)) {
     throw new Error("The GeoJSON geometry type", geometryType, "is not allowed for this function!");
     return;
   }
-
-  if (!allowedTypes.includes(type)) {
-    throw new Error(type, "is not a valid feature type!");
+  // Check that the type of feature is allowed 
+  if (!ALLOWED_FEATURE_TYPES.includes(featureType)) {
+    throw new Error(featureType, "is not a valid feature type!");
     return;
   }
-
+  // Decorations for polylines 
   if (geometryType === "LineString") {
-    return L.polylineDecorator(layer, polylineDecoratorOptions(layer, type));
+    return L.polylineDecorator(layer, polylineDecoratorOptions(layer, featureType));
   }
 }
