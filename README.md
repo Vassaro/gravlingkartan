@@ -18,7 +18,7 @@ This project is licensed under the [GNU Public License 3.0 (GPL-3,0)](LICENSE)
 To install this project locally, just install the source files. There is nothing which needs installation by package manager here.
 
 ## Usage
-- Go to [https://jockehertz.github.io/gravlingkartan](https://jockehertz.github.io/gravlingkartan) 
+- Go to [https://vassaro.github.io/gravlingkartan](https://vassaro.github.io/gravlingkartan) 
 - Run the source files locally (using http-server or something akin to it). NOTE: This program downloads distributions from unpkg.com, so it needs an internet connnection to function.
 
 ## Pipeline
