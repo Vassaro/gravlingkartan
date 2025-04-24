@@ -1,5 +1,5 @@
 // Define groups
-var groups = {
+const GROUPS = {
   // Ditches 
   mellanangarna_vastra: new L.LayerGroup(),
   mellanangarna_ostra: new L.LayerGroup(),

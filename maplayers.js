@@ -1,5 +1,5 @@
 // Define links to basemaps, attribution, and zoom properties 
-var basemaps = {
+const BASEMAPS = {
   OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</a>.',
     maxNativeZoom: 18,
@@ -12,11 +12,11 @@ var basemaps = {
 
 
 // Group the basemaps
-var baseTree = {
+const BASETREE = {
   label: 'Kartbakgrunder',
   children: [
-    { label: 'OpenStreetMap', layer: basemaps.OpenStreetMap },
-    { label: 'Satellit', layer: basemaps.Satellit },
+    { label: 'OpenStreetMap', layer: BASEMAPS.OpenStreetMap },
+    { label: 'Satellit', layer: BASEMAPS.Satellit },
   ]
 };
 
@@ -42,16 +42,16 @@ sources.forEach(source => {
             layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.desc);
           }
           if (feature.properties.skip !== true) { // || true) { // för att visa andra stigar
-            const group = groups[feature.properties.group];
-            group.addLayer(layer);
-            var decorator = layer.decorate(feature.properties.type, feature.geometry.type);
-            if (decorator) group.addLayer(decorator);
+            const GROUP = GROUPS[feature.properties.group];
+            GROUP.addLayer(layer);
+            const DECORATOR = layer.decorate(feature.properties.type, feature.geometry.type);
+            if (DECORATOR) GROUP.addLayer(DECORATOR);
           }
         },
         pointToLayer: function (feature, latlng) {
           if (feature.properties.icon) {
             thisMarker = L.marker(latlng, {
-              icon: icons[feature.properties.icon],
+              icon: ICONS[feature.properties.icon],
             });
           } else {
             thisMarker = L.marker(latlng, {
@@ -68,7 +68,7 @@ sources.forEach(source => {
 });
 
 // Config for the layer controls
-var options = {
+const OPTIONS = {
   closedSymbol: '<i class="fa fa-solid fa-chevron-right"></i>',
   openedSymbol: '<i class="fa fa-solid fa-chevron-down"></i>',
   selectorBack: false,
@@ -79,8 +79,8 @@ var options = {
 
 // Exported windows
 window.MapLayers = {
-  OverlaysTree: overlaysTree,
-  BaseTree: baseTree,
-  Basemaps: basemaps,
-  Options: options
+  OverlaysTree: OVERLAYS_TREE,
+  BaseTree: BASETREE,
+  Basemaps: BASEMAPS,
+  Options: OPTIONS,
 }

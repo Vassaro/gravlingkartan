@@ -1,5 +1,5 @@
 // icons.js
-var icons = {
+const ICONS = {
     toiletIcon: new L.icon({
         iconUrl: 'icons/toilet.png',
         iconSize: [60, 60],
