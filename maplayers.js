@@ -44,7 +44,7 @@ sources.forEach(source => {
           if (feature.properties.skip !== true) { // || true) { // för att visa andra stigar
             const group = groups[feature.properties.group];
             group.addLayer(layer);
-            var decorator = decorateLayer(layer, feature.properties.type, feature.geometry.type);
+            var decorator = layer.decorate(feature.properties.type, feature.geometry.type);
             if (decorator) group.addLayer(decorator);
           }
         },
@@ -59,13 +59,11 @@ sources.forEach(source => {
           }
           return thisMarker;
         },
-        style: function (feature) { 
-          return styleLayer(feature.properties.type); 
-        }
+        style: (feature) => styleFeature(feature)
       });
     })
     .catch(error => {
-      console.error('Error loading GeoJSON from', source + ':', error);
+      console.error(`Error loading GeoJSON from ${source}: ${error}`);
     });
 });
 
