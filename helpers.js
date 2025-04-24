@@ -5,54 +5,44 @@ const VALID_GEOMETRY_TYPES = [
   "Point", 
   "LineString", 
   "Polygon"
-];
+]
 
 // Defines allowed types of features for error checking
 const VALID_FEATURE_TYPES = [
   "ditch_closed", 
   "ditch_open", 
   "ditch_ongoing"
-];
-
+]
 
 /** Defines styles for layers
   * @param {"ditch_open" | "ditch_closed" | "ditch_ongoing"} type 
   * @returns {object} options for PolylineDecorator
 */
-function styleFeature(feature) {
+function styleFeature (feature) {
   switch (feature.properties.type) {
-
-    case "ditch_closed": {
-      return {
+    case "ditch_closed": return {
         dasharray: "2, 10",
         color: "#33ccff",
         weight: 5,
         opacity: 0
-      };
-    }
+      }
 
-    case "ditch_open": {
-      return {
+    case "ditch_open": return {
         color: "#3388ff",
         weight: 5,
         opacity: 1
-      };
-    }
+      }
 
-    case "ditch_ongoing": {
-      return {
+    case "ditch_ongoing": return {
         dashArray: "2, 10",
         color: "#cc0000",
         weight: 5,
         opacity: 0 
-      };
-    }
+      }
     
-    default:
-      return {};
+    default: return {}
   }
 }
-
 
 /** Specifies options for type of geometry
   *
@@ -60,9 +50,8 @@ function styleFeature(feature) {
   * @param {"ditch_open" | "ditch_closed" | "ditch_ongoing"} type
   * @returns {Object} Options for polylineDecorator()
   */
-function _polylineDecoratorOptions(layer, type) {
+function _polylineDecoratorOptions (layer, type) {
   switch (type) {
-
     case "ditch_closed": return {
         patterns: [
           {
@@ -81,7 +70,7 @@ function _polylineDecoratorOptions(layer, type) {
             })
           }
         ]
-      };
+      }
     
     case "ditch_open": return {
         patterns: [
@@ -95,7 +84,7 @@ function _polylineDecoratorOptions(layer, type) {
             })
           }
         ]
-      };
+      }
 
     case "ditch_ongoing": return {
         patterns: [
@@ -108,32 +97,28 @@ function _polylineDecoratorOptions(layer, type) {
             })
           }
         ]
-      };
+      }
 
-    default:
-      return {};
+    default: return {}
   }
 }
-
 
 /** Validates a layer for decoration 
   *
   * @param {"ditch_open" | "ditch_closed" | "ditch_ongoing"} featureType - the type of feature, e.g. ditch, waterline, fibre-optic cable.
   * @param {"Point" | "LineString" | "Polygon"} geometryType - the GeoJSON geometry type
   */
-L.Layer.prototype._validateDecoration = function(featureType, geometryType) {
-
+L.Layer.prototype._validateDecoration = function (featureType, geometryType) {
   // Check that the geometry type is allowed 
   if (!VALID_GEOMETRY_TYPES.includes(geometryType)) {
-    throw new Error(`The GeoJSON geometry type ${geometryType} is not allowed for this function!`);
+    throw new Error(`The GeoJSON geometry type ${geometryType} is not allowed for this function!`)
   }
 
   // Check that the type of feature is allowed 
   if (!VALID_FEATURE_TYPES.includes(featureType)) {
-    throw new Error(`${featureType} is not a valid feature type!`);
+    throw new Error(`${featureType} is not a valid feature type!`)
   }
 }
-
 
 /** Returns a decorator given a layer, if the geometry and type is valid
   *
@@ -141,24 +126,21 @@ L.Layer.prototype._validateDecoration = function(featureType, geometryType) {
   * @param {"Point" | "LineString" | "Polygon"} geometryType - the GeoJSON geometry type 
   * @returns {L.Polyline | undefined}
   */
-L.Layer.prototype.decorate = function(featureType, geometryType) {
-
-  this._validateDecoration(featureType, geometryType);
+L.Layer.prototype.decorate = function (featureType, geometryType) {
+  this._validateDecoration(featureType, geometryType)
   
   switch (geometryType) {
-
     case "Point":
       // TODO
-      return undefined;
+      return undefined
 
     case "LineString":
-      return L.polylineDecorator(this, _polylineDecoratorOptions(this, featureType));
+      return L.polylineDecorator(this, _polylineDecoratorOptions(this, featureType))
     
     case "Polygon":
       // TODO
-      return undefined;
+      return undefined
 
-    default:
-      return undefined;
+    default: return undefined
   }
 }

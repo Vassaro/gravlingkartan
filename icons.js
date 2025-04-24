@@ -13,4 +13,4 @@ const ICONS = {
         iconAnchor: [30, 60],
         popupAnchor: [0, -60]
     }),
-};
+}

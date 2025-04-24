@@ -14,4 +14,4 @@ const GROUPS = {
 
   // OTHERS
   ongoing: new L.LayerGroup(),
-};
+}
